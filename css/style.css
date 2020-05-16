@@ -73,9 +73,6 @@ h6{
     font-size: 1.125rem;
 }
 
-a{
-    color: #1b5d9f;
-}
 
 /** Helper CSS **/
 .font-proxima{
@@ -166,10 +163,9 @@ a{
 /*** Main Menu ***/
 ul.main-menu{
     list-style: none;
-    display: flex;
 }
 ul.main-menu > li{
-    margin-left: 1rem;
+    margin-left: 0.8rem;
 }
 ul.main-menu > li a{
     display: block;
@@ -188,6 +184,25 @@ ul.main-menu > li a.donate{
 }
 ul.main-menu > li a:hover{
     color: var(--brand-primary);
+}
+
+/*** Mobile Menu ****/
+#nav-content{
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+#nav-content.active{
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+#nav-content ul li a:hover{
+    color: var(--brand-secondary);
 }
 
 
