@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="704" height="380.773" viewBox="0 0 400 380.773">
+  <g id="Group_1197" data-name="Group 1197" transform="translate(-1118.577 -1226.241)">
+    <ellipse id="Ellipse_1193" data-name="Ellipse 1193" cx="190.387" cy="190.386" rx="190.387" ry="190.386" transform="translate(1118.577 1226.241)" fill="#fafbff"/>
+    <path id="Path_911" data-name="Path 911" d="M155.541,473.4l40.281-138.346,2.851-9.562C281.326,346.1,324.54,428.062,303.932,510.716A154.239,154.239,0,0,1,4.617,436.089c17.311-69.429,76.249-116.808,147.8-116.808v11.249Z" transform="translate(1156.659 943.778)" fill="#bcf0ef"/>
+    <path id="Path_912" data-name="Path 912" d="M120.853,476.859V328.186a137.319,137.319,0,0,1,35.969,4.415Z" transform="translate(1188.177 945.888)" fill="#dee0ed"/>
+    <path id="Path_913" data-name="Path 913" d="M166.684,324.178l-10.811,9.283L120.3,457.375V484.24l43.254-149.562Z" transform="translate(1188.693 945.249)" fill="#49cbc9"/>
+    <text id="_96_" data-name="96%" transform="translate(1288.697 1455.217)" fill="#49cbc9" font-size="20" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.025em"><tspan x="0" y="22">96%</tspan></text>
+    <text id="_4_" data-name="4%" transform="translate(1315.497 1288.719)" fill="#49cbc9" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.025em"><tspan x="0" y="15">4%</tspan></text>
+    <line id="Line_1252" data-name="Line 1252" x1="98.852" transform="translate(1429.418 1446.532)" fill="none" stroke="#49cbc9" stroke-width="1.5"/>
+    <line id="Line_1254" data-name="Line 1254" x1="145.787" y2="46.928" transform="translate(1319.871 1287.712)" fill="none" stroke="#49cbc9" stroke-width="1.5"/>
+    <text id="Administration_and_fundraising" data-name="Administration
+and fundraising" transform="translate(1491 1259)" font-size="14" font-family="SegoeUI, Segoe UI" letter-spacing="0.025em"><tspan x="0" y="15">Administration</tspan><tspan x="0" y="34">and fundraising</tspan></text>
+    <text id="Programming" transform="translate(1550 1440)" font-size="14" font-family="SegoeUI, Segoe UI" letter-spacing="0.025em"><tspan x="6.34" y="15">Programming</tspan></text>
+  </g>
+</svg>

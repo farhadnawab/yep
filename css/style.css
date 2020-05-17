@@ -73,6 +73,11 @@ h6{
     font-size: 1.125rem;
 }
 
+.main-wrapper{
+    max-width: 2500px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /** Helper CSS **/
 .font-proxima{
@@ -213,9 +218,13 @@ ul.main-menu > li a:hover{
     background-size: cover;
     background-position: center bottom;
 }
-.hero-section .container{
+.front .hero-section .container{
     height: 100vh;
     min-height: 450px;
+}
+.not-front .hero-section .container{
+    height: 35rem;
+    padding-top: 5rem;
 }
 
 
@@ -240,6 +249,48 @@ ul.main-menu > li a:hover{
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+/*** We Spend Charitable ***/
+section.we-spend-charitable img{
+    
+    margin: 0 auto;
+}
+
+/*** Donate By Boxes ***/
+.donate-by-box{
+    background: #fff;
+    -webkit-box-shadow: 0px 10px 30px rgba(213, 216, 239, 0.5);
+    -moz-box-shadow: 0px 10px 30px rgba(213, 216, 239, 0.5);
+    box-shadow: 0px 10px 30px rgba(213, 216, 239, 0.5);
+    color: #000;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+.donate-by-box.active{
+    background: var(--brand-primary);
+    color: #fff;
+}
+
+
+/*** Why your donation ***/
+.donation-numbering{
+    background-image: url("../images/donation-numbers.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 48px;
+    height: 48px;
+    color: var(--brand-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 /*** Footer ***/
