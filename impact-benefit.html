@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+  <title>YEP</title>	
+
+  <meta name="keywords" content="YEP" />
+  <meta name="description" content="YEP">
+  <meta name="author" content="https://github.com/farhadnawab">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    
+  <!-- Tailwind CSS -->
+  <link href="css/tailwind.min.css" rel="stylesheet">
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/c772f6a9db.js" crossorigin="anonymous"></script>
+
+  <!-- Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ </head>
+ <body class="not-front">
+
+  <div class="main-wrapper overflow-hidden relative">
+    
+    <!--Nav-->
+    <nav id="header" class="absolute w-full z-30 top-0 left-0">
+
+        <div class="w-full container mx-auto px-4 py-6 flex items-center">
+
+            <div data-aos="fade-right" data-aos-duration="600">
+                <a class="block logo" href="index.html">
+                    <img src="images/logo.svg" />
+                </a>
+            </div>
+
+            <div class="flex-grow flex justify-end pl-10 xl:pl-0" data-aos="fade-left" data-aos-delay="50" data-aos-duration="600">
+              <ul class="main-menu xl:flex hidden">
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Impacts</a></li>
+                <li><a href="#">Get Involved</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="donate shadow-type-2">Donate</a></li>
+              </ul>
+              <button id="nav-toggle" class="inline-block xl:hidden align-middle appearance-none focus:outline-none" type="button" onclick="openMenu()">
+                <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="w-full h-full py-20 px-5 z-50 bg-primary fixed top-0 left-0" id="nav-content">
+                <button class="absolute top-0 right-0 mr-5 mt-5" type="button" onclick="closeMenu()">
+                    <svg width="36px" height="36px" viewBox="0 0 36 36">
+                        <path d="M13.2813 11.7189L13.2813 0.780128C13.2813 0.349208 12.9319 -0.00012207 12.501 -0.00012207L12.499 -0.00012207C12.0681 -0.00012207 11.7188 0.349208 11.7188 0.780128L11.7188 11.7189L0.78025 11.7189C0.34933 11.7189 0 12.0682 0 12.4991L0 12.5011C0 12.932 0.34933 13.2814 0.78025 13.2814L11.7188 13.2814L11.7188 24.2196C11.7188 24.6505 12.0681 24.9999 12.499 24.9999L12.501 24.9999C12.9319 24.9999 13.2813 24.6505 13.2813 24.2196L13.2813 13.2814L24.2197 13.2814C24.6507 13.2814 25 12.932 25 12.5011L25 12.4991C25 12.0682 24.6507 11.7189 24.2197 11.7189L13.2813 11.7189Z" transform="matrix(0.7071066 0.7071069 -0.7071069 0.7071066 17.67773 0)" id="Combined-Shape" fill="#1A1919" fill-rule="evenodd" stroke="none"></path>
+                    </svg>
+                </button>
+
+                <ul class="list-reset flex h-full flex-col w-full max-w-2xl mx-auto text-3xl text-white font-light capitalize align-center justify-center text-center">
+                    <li class="mb-5">
+                        <a href="#">Who We Are</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">How It Works</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Impacts</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Get Involved</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Events</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>                
+            </div>
+            <!-- Mobile Menu - END -->
+            
+        </div>
+    </nav>
+
+    <!-- Hero Section-->
+    <section class="hero-section relative" style="background-image: url('images/impactbenefit-hero.png')">
+      
+      <div class="flex w-full container mx-auto px-4 items-center">
+
+        <div class="w-3/5 text-secondary" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="-1000">
+          <h1 class="font-bold leading-none" data-aos="fade-right" data-aos-delay="500" data-aos-offset="-1000">Impact and Benefits</h1>
+
+          <p class="text-lg mt-6 max-w-lg leading-normal" data-aos="fade-right" data-aos-delay="700" data-aos-offset="-1000">Our program has benefits for children, youth, adults and seniors</p>
+        </div>
+
+      </div>
+
+      <div class="hero-bottom"><img src="images/hero_bottom.png" /></div>
+
+    </section>
+
+    <!-- "Children" Section -->
+    <section class="relative" data-aos="fade-up" data-aos-duration="1000">
+      <div class="w-full container mx-auto px-4 pt-12 py-32">                        
+
+        <h2 class="leading-tight mb-16 text-secondary text-center">Children</h2>
+
+        <div class="flex flex-wrap -mx-5">
+          
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 lg:mb-0 mx-auto px-5 md:flex md:flex-col">
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow">
+              <div class="donation-numbering">1</div>
+              <h4 class="font-bold">Better social-emotional abilities</h4>
+
+              <p class="font-gibson leading-6 mt-6">Our programs develop essential life-long soft-skills not easily learned in school, such as communication, problem solving, relationship skills, and self-reflection. These are crucial components of a child’s development that are proven to be necessary to succeed in adulthood.</p>
+            </div>
+
+            <img class="inline-block" src="images/children1.png" />
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 lg:mb-0 mx-auto px-5 md:flex md:flex-col">
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow">
+              <div class="donation-numbering">2</div>
+              <h4 class="font-bold">Addressing delinquency</h4>
+
+              <p class="font-gibson leading-6 mt-6">Our programs also appeal to children with behavioural difficulties, who feel they have to ‘prove’ themselves to others. Shifting power dynamics and placing youth in 1-on-1 leadership roles has proven to build patience, lower aggression, and improve general behaviours to others.</p>
+            </div>
+
+            <img class="inline-block" src="images/children2.png" />
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 md:mb-0 mx-auto px-5 md:flex md:flex-col">
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow">
+              <div class="donation-numbering">3</div>
+              <h4 class="font-bold">Increased empathy</h4>
+
+              <p class="font-gibson leading-6 mt-6">Children often assume they can’t teach adults and seniors anything, falsely believing that older people know everything they do. But the act of teaching someone, and seeing their knowledge deficiencies and vulnerabilities, has proven to drastically build empathy in children.</p>
+            </div>
+
+            <img class="inline-block" src="images/children3.png" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- "Youth" Section -->
+    <section class="relative" data-aos="fade-up" data-aos-duration="1000">
+      <div class="w-full container mx-auto px-4 pt-12 py-32">                        
+
+        <h2 class="leading-tight mb-16 text-secondary text-center">Youth</h2>
+
+        <div class="flex flex-wrap -mx-5">
+          
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 lg:mb-0 mx-auto px-5 md:flex md:flex-col">
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow">
+              <div class="donation-numbering">1</div>
+              <h4 class="font-bold">Better self-esteem</h4>
+
+              <p class="font-gibson leading-6 mt-6">Youth are given the task of teaching skills to someone much older than them. At every interaction, they teach something new. In doing so, they build strong feelings of accomplishment and a positive sense of self-worth.</p>
+            </div>
+
+            <img class="inline-block" src="images/youth1.png" />
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 lg:mb-0 mx-auto px-5 md:flex md:flex-col">
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow">
+              <div class="donation-numbering">2</div>
+              <h4 class="font-bold">From ‘Service Receiver’ to ‘Service Provider’</h4>
+
+              <p class="font-gibson leading-6 mt-6">Far too often, youth are viewed as a ‘problem’ that social programs need to ‘fix’. Here, we view youth as a solution. We show them that they are useful to society; they’re given the responsibility to help marginalized adults and seniors thrive in their communities.</p>
+            </div>
+
+            <img class="inline-block" src="images/youth2.png" />
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 md:mb-0 mx-auto px-5 md:flex md:flex-col">
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow">
+              <div class="donation-numbering">3</div>
+              <h4 class="font-bold">21st Century Skills</h4>
+
+              <p class="font-gibson leading-6 mt-6">21st century employers favour the difficult to teach soft-skills over technical skills, for example, communication, critical thinking and creativity. When youth have to teach a skill, they actively use and improve these abilities.</p>
+            </div>
+
+            <img class="inline-block" src="images/youth3.png" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- "Adults" Section -->
+    <section class="relative" data-aos="fade-up" data-aos-duration="1000">
+      <div class="w-full container mx-auto px-4 pt-12 py-32">                        
+
+        <h2 class="leading-tight mb-16 text-secondary text-center">Adults</h2>
+
+        <div class="flex flex-wrap -mx-5">
+          
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 lg:mb-0 mx-auto px-5 md:flex md:flex-col">
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow">
+              <div class="donation-numbering">1</div>
+              <h4 class="font-bold">Improved mental health</h4>
+
+              <p class="font-gibson leading-6 mt-6">For many newcomers, the stress of moving to a new place and adjusting to a new culture leads to anxiety or depression. Our program pairs them with a young person from the same cultural background, who helps them learn and navigate their new surroundings.</p>
+            </div>
+
+            <img class="inline-block" src="images/adults1.png" />
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 lg:mb-0 mx-auto px-5 md:flex md:flex-col">
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow">
+              <div class="donation-numbering">2</div>
+              <h4 class="font-bold">Learn new skills 10x faster</h4>
+
+              <p class="font-gibson leading-6 mt-6">They learn from young people who speak their own native language (when required), and they learn 1-on-1 rather than in a traditional classroom environment. While our attendance and retention rates are near 100%, other adult education programs experience a 25% dropout rate.</p>
+            </div>
+
+            <img class="inline-block" src="images/adults2.png" />
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 md:mb-0 mx-auto px-5 md:flex md:flex-col">
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow">
+              <div class="donation-numbering">3</div>
+              <h4 class="font-bold">Reduced reliance on children</h4>
+
+              <p class="font-gibson leading-6 mt-6">Many newcomer families experience a role reversal; children quickly pick up the local language, and they’re required to support their families in adult-based day-to-day tasks, such as translating at doctors and bank visits, filing government forms, and more. Research highlights negative consequences of such a role reversal, including children developing resentment and depression.</p>
+            </div>
+
+            <img class="inline-block" src="images/adults3.png" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- "Seniors" Section -->
+    <section class="relative" data-aos="fade-up" data-aos-duration="1000">
+      <div class="w-full container mx-auto px-4 pt-12 py-32">                        
+
+        <h2 class="leading-tight mb-16 text-secondary text-center">Seniors</h2>
+
+        <div class="flex flex-wrap -mx-5">
+          
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 lg:mb-0 mx-auto px-5 md:flex md:flex-col">
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow">
+              <div class="donation-numbering">1</div>
+              <h4 class="font-bold">Reduced Social Isolation</h4>
+
+              <p class="font-gibson leading-6 mt-6">Our same-language intergenerational programs are easy ways for seniors to be socially active. Experts say 1 in 5 seniors are routinely lonely, and being lonely for a prolonged period is more harmful to a person’s health than smoking 15 cigarettes a day.</p>
+            </div>
+
+            <img class="inline-block" src="images/senior1.png" />
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 lg:mb-0 mx-auto px-5 md:flex md:flex-col">
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow">
+              <div class="donation-numbering">2</div>
+              <h4 class="font-bold">Improved Digital Literacy</h4>
+
+              <p class="font-gibson leading-6 mt-6">3 in 4 seniors require someone to teach them one-on-one new skills like technology (PEW Research Center). 98% of seniors surveyed say they prefer learning from a young person versus an older person.</p>
+            </div>
+
+            <img class="inline-block" src="images/senior2.png" />
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 md:mb-0 mx-auto px-5 md:flex md:flex-col">
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow">
+              <div class="donation-numbering">3</div>
+              <h4 class="font-bold">Reducing the Generational Gap</h4>
+
+              <p class="font-gibson leading-6 mt-6">Our programs reduce stigma associated with aging and discrimination against older adults, and foster lifelong learning.</p>
+            </div>
+
+            <img class="inline-block" src="images/senior3.png" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- "Communities" Section -->
+    <section class="relative" data-aos="fade-up" data-aos-duration="1000">
+      <div class="w-full container mx-auto px-4 pt-12 py-32">                        
+
+        <h2 class="leading-tight mb-16 text-secondary text-center">Communities</h2>
+
+        <div class="flex flex-wrap -mx-5">
+          
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 lg:mb-0 mx-auto px-5 md:flex md:flex-col">
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow">
+              <div class="donation-numbering">1</div>
+              <h4 class="font-bold">Improved social capital</h4>
+
+              <p class="font-gibson leading-6 mt-6">Our programs allow everyone to connect, regardless of whether they are introverted or extroverted, able-bodied or disabled, or fluent or not in the English language.</p>
+            </div>
+
+            <img class="inline-block" src="images/communities1.png" />
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 lg:mb-0 mx-auto px-5 md:flex md:flex-col">
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow">
+              <div class="donation-numbering">2</div>
+              <h4 class="font-bold">$1 to $27 Social Return</h4>
+
+              <p class="font-gibson leading-6 mt-6">Every $1 invested in our programs generates $27 of social impact, through greater volunteerism, and improved mental health education, and employment outcomes.</p>
+            </div>
+
+            <img class="inline-block" src="images/communities2.png" />
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 md:mb-0 mx-auto px-5 md:flex md:flex-col">
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow">
+              <div class="donation-numbering">3</div>
+              <h4 class="font-bold">Unlocking Community Resources</h4>
+
+              <p class="font-gibson leading-6 mt-6">Our programs engage community members (children and youth) to help other community members (adults and seniors).</p>
+            </div>
+
+            <img class="inline-block" src="images/communities3.png" />
+          </div>
+
+        </div>
+
+        <div class="text-center mt-20">
+          <a href="#" class="btn btn-primary">Make a donation</a>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer relative z-10 text-white bg-black">
+        <div class="container w-full max-w-6xl px-4 pt-20 pb-6 mx-auto">
+
+            <div class="flex flex-col text-center md:flex-row md:text-left">
+
+                
+                <div class="md:mr-8 flex-1">
+                    <a href="index.html">
+                      <img class="inline-block" src="images/footer-logo.svg" />
+                    </a>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                    <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Who We Are</h6>
+
+                    <div class="links">
+                      <a href="#">Our Story</a>
+                      <a href="#">Staff and Board of Directors</a>
+                      <a href="#">News</a>
+                      <a href="#">Accountability</a>
+                      <a href="#">Our COVID-19 Response</a>
+                    </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">How it Works</h6>
+
+                  <div class="links">
+                    <a href="#">Type of Programs</a>
+                    <a href="#">Curriculm and Training Model</a>
+                    <a href="#">Program Locations and Case Studies</a>
+                    <a href="#">Partnerships</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Impacts</h6>
+
+                  <div class="links">
+                    <a href="#">Impacts and Benefits</a>
+                    <a href="#">Research and Insights</a>
+                    <a href="#">Stories</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Get Involved</h6>
+
+                  <div class="links">
+                    <a href="#">Donate</a>
+                    <a href="#">Volunteer</a>
+                    <a href="#">Corporate Engagement</a>
+                    <a href="#">Speaking Engagements</a>
+                    <a href="#">Start a YEP Program</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Events</h6>
+
+                  <div class="links">
+                    <a href="#">Soccer for Charity</a>
+                    <a href="#">Bubble Soccer for Charity</a>
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center md:justify-end text-xs leading-relaxed mt-12">
+
+              <div class="social-links flex items-center">
+                <a href="#" class="mr-6"><img src="images/icons/footer-facebook.svg" /></a>
+                <a href="#" class="mr-6"><img src="images/icons/footer-twitter.svg" /></a>
+                <a href="#" class="mr-6"><img src="images/icons/footer-linkedin.svg" /></a>
+              </div>
+
+              <p style="color: #8d8d8d;">Copyright 2020<br/>
+                Youth Empowering Parents</p>
+            </div>
+            
+        </div>
+    </footer>
+  </div>
+
+   
+</body>
+
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ 
+ <!-- Animate On Scroll -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+ <script src="js/main.js"></script> 
+
+</html>
