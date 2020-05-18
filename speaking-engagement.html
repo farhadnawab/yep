@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+  <title>YEP</title>	
+
+  <meta name="keywords" content="YEP" />
+  <meta name="description" content="YEP">
+  <meta name="author" content="https://github.com/farhadnawab">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    
+  <!-- Tailwind CSS -->
+  <link href="css/tailwind.min.css" rel="stylesheet">
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/c772f6a9db.js" crossorigin="anonymous"></script>
+
+  <!-- Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ </head>
+ <body class="not-front">
+
+  <div class="main-wrapper overflow-hidden relative">
+    
+    <!--Nav-->
+    <nav id="header" class="absolute w-full z-30 top-0 left-0">
+
+        <div class="w-full container mx-auto px-4 py-6 flex items-center">
+
+            <div data-aos="fade-right" data-aos-duration="600">
+                <a class="block logo" href="index.html">
+                    <img src="images/logo.svg" />
+                </a>
+            </div>
+
+            <div class="flex-grow flex justify-end pl-10 xl:pl-0" data-aos="fade-left" data-aos-delay="50" data-aos-duration="600">
+              <ul class="main-menu xl:flex hidden">
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Impacts</a></li>
+                <li><a href="#">Get Involved</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="donate shadow-type-2">Donate</a></li>
+              </ul>
+              <button id="nav-toggle" class="inline-block xl:hidden align-middle appearance-none focus:outline-none" type="button" onclick="openMenu()">
+                <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="w-full h-full py-20 px-5 z-50 bg-primary fixed top-0 left-0" id="nav-content">
+                <button class="absolute top-0 right-0 mr-5 mt-5" type="button" onclick="closeMenu()">
+                    <svg width="36px" height="36px" viewBox="0 0 36 36">
+                        <path d="M13.2813 11.7189L13.2813 0.780128C13.2813 0.349208 12.9319 -0.00012207 12.501 -0.00012207L12.499 -0.00012207C12.0681 -0.00012207 11.7188 0.349208 11.7188 0.780128L11.7188 11.7189L0.78025 11.7189C0.34933 11.7189 0 12.0682 0 12.4991L0 12.5011C0 12.932 0.34933 13.2814 0.78025 13.2814L11.7188 13.2814L11.7188 24.2196C11.7188 24.6505 12.0681 24.9999 12.499 24.9999L12.501 24.9999C12.9319 24.9999 13.2813 24.6505 13.2813 24.2196L13.2813 13.2814L24.2197 13.2814C24.6507 13.2814 25 12.932 25 12.5011L25 12.4991C25 12.0682 24.6507 11.7189 24.2197 11.7189L13.2813 11.7189Z" transform="matrix(0.7071066 0.7071069 -0.7071069 0.7071066 17.67773 0)" id="Combined-Shape" fill="#1A1919" fill-rule="evenodd" stroke="none"></path>
+                    </svg>
+                </button>
+
+                <ul class="list-reset flex h-full flex-col w-full max-w-2xl mx-auto text-3xl text-white font-light capitalize align-center justify-center text-center">
+                    <li class="mb-5">
+                        <a href="#">Who We Are</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">How It Works</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Impacts</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Get Involved</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Events</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>                
+            </div>
+            <!-- Mobile Menu - END -->
+            
+        </div>
+    </nav>
+
+    <!-- Hero Section-->
+    <section class="hero-section relative" style="background-image: url('images/impactbenefit-hero.png')">
+      
+      <div class="flex w-full container mx-auto px-4 items-center">
+
+        <div class="w-3/5 text-secondary" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="-1000">
+          <h1 class="font-bold leading-none" data-aos="fade-right" data-aos-delay="500" data-aos-offset="-1000">Speaking Engagements</h1>
+
+          <p class="text-lg mt-6 max-w-lg leading-normal" data-aos="fade-right" data-aos-delay="700" data-aos-offset="-1000">Our team has extensive experience making engaging presentations to audiences of all sizes, and can be a thought-provoking addition to your event.</p>
+
+          <a href="#" class="btn btn-primary mt-6" data-aos="fade-right" data-aos-delay="800" data-aos-offset="-1000">Book a Speaker</a>
+        </div>
+
+      </div>
+
+      <div class="hero-bottom"><img src="images/hero_bottom.png" /></div>
+
+    </section>
+
+    <!-- "Past Engagements" Section -->
+    <section class="relative" data-aos="fade-up" data-aos-duration="1000">
+      <div class="w-full container mx-auto px-4 pt-12 py-32">                        
+
+        <h2 class="leading-tight mb-16 text-secondary text-center">Past Engagements</h2>
+
+        <div class="flex flex-wrap -mx-5">
+          
+          <!-- 1st Row -->
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement1.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">Montreal, Canada</p>
+              <h4>C2 Montreal</h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">C2 Montreal is a surreal hybrid of a TED Talk and a performance by Cirque du Soleil. YEP facilitated a design thinking workshop with educators and business professionals to discover new ways to encourage communities to empower young people to become teachers.</p>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement2.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">Toronto, Canada</p>
+              <h4>Elevate</h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">Elevate, Canada’s largest innovation festival, unites the world’s innovators to solve society’s greatest challenges. YEP was a feature at the conferences’ Elevate Youth Zone, where our unique curriculum was on display to explain how youth with no teaching experience can become teachers.</p>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement3.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">Toronto, Canada</p>
+              <h4>Mozilla</h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">Mozilla organized a conference on building accessible internet for all. YEP hosted an action learning session for nonprofits and librarians about how they could engage youth in teaching older adults how to use the internet safely in their everyday lives.</p>
+            </div>
+          </div>
+
+          <!-- 2nd Row -->
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement4.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">Doha, Qatar</p>
+              <h4>United Nations</h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">Over 2,000 political and corporate leaders, civil society activists, research centers, foundations and journalists, came together to agree on joint actions to improve relations across cultures and combat prejudice. YEP presented about the roles young people can play in addressing and improving cultural integration challenges in high-immigrant communities.</p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement5.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">New Dehli, India</p>
+              <h4>United Nations</h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">A joint United Nations and BMW Group event was held in New Dehli, India. YEP participated with other global initiatives in action learning workshops and cases studies in the fields of scaling-up, finance, human resources, marketing, public relations, and fundraising.</p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement6.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">New York City, USA</p>
+              <h4>United Nations</h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">Participants from over 75 countries attended a week-long retreat to learn about innovative approaches to scaling up grassroots projects. YEP presented a case study, outlining the different methods it undertook to grow from one location in Toronto, to dozens across multiple countries, all on a shoestring budget.</p>
+            </div>
+          </div>
+
+          <!-- 3rd Row -->
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement7.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">Berlin, Germany</p>
+              <h4>Cities of Migration Conference</h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">This conference explored the realities and opportunities around the world created by today’s hyper-diversity. YEP presented a case study of how our programs are being used by communities to welcome immigrants and create the conditions they need to integrate, participate and succeed.</p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement8.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">Toronto, Canada</p>
+              <h4>Walrus Talks</h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">Walrus Talks is a cross-Canada speaker series that focuses on relevant and important topics that spark conversation on matters vital to Canadians. YEP’s talk presented challenges faced daily by newcomers to Canada, the billions of dollars lost every year to underemployment of newcomers, and the systems changes we need in place to address those challenges.</p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement9.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">Boston, USA</p>
+              <h4>“Global Challenges and Opportunities Facing Children, Youth and Families</h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">The conference gathered over 500 global teachers, researchers, counselors, child-life specialists, and professionals who are pioneers in early childhood education. YEP spoke on a panel about unique approaches to youth leadership and empowerment, and for innovative solutions to support children lagging behind in academics.</p>
+            </div>
+          </div>
+
+          <!-- 4th Row -->
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement10.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">Toronto, Canada</p>
+              <h4>Canadian Urban Institute </h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">This event highlights those making a profound impact on Canada’s urban regions and leading the transformational change needed for a sustainable and prosperous future. YEP presented a case example of one family’s challenges finding suitable language and technology training courses during her first 3 years in Canada, before YEP entered her community.</p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement11.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">Toronto, Canada</p>
+              <h4>Parents as Partners Symposium </h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">This symposium gathers the top approaches to building student success that are being implemented in Toronto area schools. YEP staff, together with a youth and adult program participant, shared their experiences to the symposium’s 700+ attendees.</p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement12.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">Toronto, Canada</p>
+              <h4>Amplify</h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">Amplify is Ontario’s premier gathering of government, Industry and sector leaders, professionals, educators, funders and researchers, who are challenging, disrupting, driving and shaping workforce development. YEP presented about how engaging young people in reverse-mentorship builds key workplace skills that they do not receive through traditional schooling.</p>
+            </div>
+          </div>
+
+          <!-- 5th Row -->
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement13.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">Toronto, Canada</p>
+              <h4>University of Toronto</h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">The University of Toronto has evolved into Canada’s leading institution of learning, discovery and knowledge creation. On several occasions, YEP has delivered presentations to students on topics around equity, youth leadership, newcomer challenges, and reverse-mentorship.</p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement14.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">Des Moines, USA</p>
+              <h4>Drake University</h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">The University provides a training course for teachers transitioning into a principal role, and offers an in-depth look at programs both in and out of the United States. YEP spoke about how its in-school program engages school staff to identify at-risk students who are in need of out-of-the-box opportunities, like YEP’s, to improve their social-emotional abilities.</p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement15.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">Toronto, Canada</p>
+              <h4>George Brown College</h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">The Faculty of Social & Community Services is a leading college that teaches students about different approaches to social practice, innovation and community development. YEP supported the College by presenting about outreach and community engagement strategies in communities where residents have low understandings of English.</p>
+            </div>
+          </div>
+
+          <!-- 6th Row -->
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement16.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">London, Canada</p>
+              <h4>Ivey Business School</h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">The Social Innovation Conference is an annual event co-hosted by Ivey’s Centre for Building Sustainable Value and its Sustainability Certificate Program, Sustainability Club and Ivey Connects, focuses on the role of leaders in visioning and realizing path-breaking social innovations. YEP presented at an interactive panel and workshop about how our programs put a spin on traditional education models.</p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement17.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">Toronto, Canada</p>
+              <h4>MeasuredOutcome.org</h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">MeasuredOutcome hosted a symposium on Seniors’ Quality of Life and Intergenerational Programming. As the sole organization engaged in reverse mentoring, YEP spoke about the unique benefits both young people and seniors gain through our programs.</p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+
+            <img class="inline-block" src="images/engagement18.png" />
+
+            <div class="relative bg-white px-5 lg:px-8 py-6 lg:py-12 shadow-type-1 flex-grow font-gibson" style="color: #404040;">
+              
+              <p class="text-sm text-primary mb-2">Toronto, Canada</p>
+              <h4>Skills for Change</h4>
+
+              <p class="leading-6 mt-6" style="color: #707070;">The Pioneers for Change event is a fundraiser and awards ceremony for skills for change, featuring a unique open-concept that facilitates in-depth conversation and networking among those championing diversity and leadership. YEP spoke about our program model, and accepted an award in the Youth category.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer relative z-10 text-white bg-black">
+        <div class="container w-full max-w-6xl px-4 pt-20 pb-6 mx-auto">
+
+            <div class="flex flex-col text-center md:flex-row md:text-left">
+
+                
+                <div class="md:mr-8 flex-1">
+                    <a href="index.html">
+                      <img class="inline-block" src="images/footer-logo.svg" />
+                    </a>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                    <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Who We Are</h6>
+
+                    <div class="links">
+                      <a href="#">Our Story</a>
+                      <a href="#">Staff and Board of Directors</a>
+                      <a href="#">News</a>
+                      <a href="#">Accountability</a>
+                      <a href="#">Our COVID-19 Response</a>
+                    </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">How it Works</h6>
+
+                  <div class="links">
+                    <a href="#">Type of Programs</a>
+                    <a href="#">Curriculm and Training Model</a>
+                    <a href="#">Program Locations and Case Studies</a>
+                    <a href="#">Partnerships</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Impacts</h6>
+
+                  <div class="links">
+                    <a href="#">Impacts and Benefits</a>
+                    <a href="#">Research and Insights</a>
+                    <a href="#">Stories</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Get Involved</h6>
+
+                  <div class="links">
+                    <a href="#">Donate</a>
+                    <a href="#">Volunteer</a>
+                    <a href="#">Corporate Engagement</a>
+                    <a href="#">Speaking Engagements</a>
+                    <a href="#">Start a YEP Program</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Events</h6>
+
+                  <div class="links">
+                    <a href="#">Soccer for Charity</a>
+                    <a href="#">Bubble Soccer for Charity</a>
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center md:justify-end text-xs leading-relaxed mt-12">
+
+              <div class="social-links flex items-center">
+                <a href="#" class="mr-6"><img src="images/icons/footer-facebook.svg" /></a>
+                <a href="#" class="mr-6"><img src="images/icons/footer-twitter.svg" /></a>
+                <a href="#" class="mr-6"><img src="images/icons/footer-linkedin.svg" /></a>
+              </div>
+
+              <p style="color: #8d8d8d;">Copyright 2020<br/>
+                Youth Empowering Parents</p>
+            </div>
+            
+        </div>
+    </footer>
+  </div>
+
+   
+</body>
+
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ 
+ <!-- Animate On Scroll -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+ <script src="js/main.js"></script> 
+
+</html>
