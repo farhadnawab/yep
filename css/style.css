@@ -142,6 +142,14 @@ h6{
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     transition: all ease 0.3s;
+    min-width: 150px;
+    text-align: center;
+}
+.btn.rounded{
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: var(--brand-tertiary);
 }
 .btn-primary{
     background-color: var(--brand-primary);
@@ -373,5 +381,9 @@ section.we-spend-charitable img{
 
     .not-front .hero-section {
         background-position: right 35% top;
+    }
+
+    .btn{
+        min-width: 0;
     }
 }
