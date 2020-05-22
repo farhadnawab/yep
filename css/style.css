@@ -314,6 +314,15 @@ section.we-spend-charitable img{
     transform: translateY(-50%);
 }
 
+
+/*** Our Story ***/
+.storyline{
+    background-image: url("../images/storyline.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto 97%;
+}
+
 /*** Footer ***/
 .footer .links a{
     display: block;
@@ -352,6 +361,10 @@ section.we-spend-charitable img{
     .homepage-map .container{
         height: 20rem;
     }
+
+    .storyline{
+        background-position: left top;
+    }
 }
 
 @media only screen and (max-width: 640px){
@@ -385,5 +398,9 @@ section.we-spend-charitable img{
 
     .btn{
         min-width: 0;
+    }
+
+    .storyline{
+        background-image: none;
     }
 }
