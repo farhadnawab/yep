@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+  <title>YEP</title>	
+
+  <meta name="keywords" content="YEP" />
+  <meta name="description" content="YEP">
+  <meta name="author" content="https://github.com/farhadnawab">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    
+  <!-- Tailwind CSS -->
+  <link href="css/tailwind.min.css" rel="stylesheet">
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/c772f6a9db.js" crossorigin="anonymous"></script>
+
+  <!-- Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ </head>
+ <body class="not-front">
+
+  <div class="main-wrapper overflow-hidden relative">
+    
+    <!--Nav-->
+    <nav id="header" class="absolute w-full z-30 top-0 left-0">
+
+        <div class="w-full container mx-auto px-4 py-6 flex items-center">
+
+            <div data-aos="fade-right" data-aos-duration="600">
+                <a class="block logo" href="index.html">
+                    <img src="images/logo.svg" />
+                </a>
+            </div>
+
+            <div class="flex-grow flex justify-end pl-10 xl:pl-0" data-aos="fade-left" data-aos-delay="50" data-aos-duration="600">
+              <ul class="main-menu xl:flex hidden">
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Impacts</a></li>
+                <li><a href="#">Get Involved</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="donate shadow-type-2">Donate</a></li>
+              </ul>
+              <button id="nav-toggle" class="inline-block xl:hidden align-middle appearance-none focus:outline-none" type="button" onclick="openMenu()">
+                <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="w-full h-full py-20 px-5 z-50 bg-primary fixed top-0 left-0" id="nav-content">
+                <button class="absolute top-0 right-0 mr-5 mt-5" type="button" onclick="closeMenu()">
+                    <svg width="36px" height="36px" viewBox="0 0 36 36">
+                        <path d="M13.2813 11.7189L13.2813 0.780128C13.2813 0.349208 12.9319 -0.00012207 12.501 -0.00012207L12.499 -0.00012207C12.0681 -0.00012207 11.7188 0.349208 11.7188 0.780128L11.7188 11.7189L0.78025 11.7189C0.34933 11.7189 0 12.0682 0 12.4991L0 12.5011C0 12.932 0.34933 13.2814 0.78025 13.2814L11.7188 13.2814L11.7188 24.2196C11.7188 24.6505 12.0681 24.9999 12.499 24.9999L12.501 24.9999C12.9319 24.9999 13.2813 24.6505 13.2813 24.2196L13.2813 13.2814L24.2197 13.2814C24.6507 13.2814 25 12.932 25 12.5011L25 12.4991C25 12.0682 24.6507 11.7189 24.2197 11.7189L13.2813 11.7189Z" transform="matrix(0.7071066 0.7071069 -0.7071069 0.7071066 17.67773 0)" id="Combined-Shape" fill="#1A1919" fill-rule="evenodd" stroke="none"></path>
+                    </svg>
+                </button>
+
+                <ul class="list-reset flex h-full flex-col w-full max-w-2xl mx-auto text-3xl text-white font-light capitalize align-center justify-center text-center">
+                    <li class="mb-5">
+                        <a href="#">Who We Are</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">How It Works</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Impacts</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Get Involved</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Events</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>                
+            </div>
+            <!-- Mobile Menu - END -->
+            
+        </div>
+    </nav>
+
+    <!-- Hero Section-->
+    <section class="hero-section relative" style="background-image: url('images/stories-hero.png')">
+      
+      <div class="flex w-full container mx-auto px-4 items-center">
+
+        <div class="w-3/5 text-secondary" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="-1000">
+          <h1 class="font-bold leading-none" data-aos="fade-right" data-aos-delay="500" data-aos-offset="-1000">Stories</h1>
+
+          <p class="text-lg mt-6 max-w-lg leading-normal" data-aos="fade-right" data-aos-delay="700" data-aos-offset="-1000">Read what youth, adults, seniors and experts have to say about Youth Empowering Parents</p>
+
+        </div>
+
+      </div>
+
+      <div class="hero-bottom"><img src="images/hero_bottom.png" /></div>
+
+    </section>
+
+    <!-- Section -->
+    <section class="relative" data-aos="fade-up" data-aos-duration="1000">
+      <div class="w-full container mx-auto px-4 py-24">                        
+
+        <div class="flex flex-wrap flex-row-reverse font-gibson">
+          
+          <div class="w-full md:w-1/2 mb-6 md:mb-0">
+            <img class="inline-block" src="images/stories-img1.png" />
+          </div>
+
+          <div class="w-full md:w-1/2 md:pr-16">
+              
+            <h2 class="font-bold font-proxima">Cloyce Weaver</h2>
+            <p class="text-xl mt-6">“For some students, school does not work.”</p>
+            <p class="leading-relaxed mt-6"> 
+              A school is a place where students discover themselves and their potential. However, what about a student who does not fit in? That, Cloyce Weaver believes, is where Youth Empowering Parents could play a role. 
+              <br/><br/>
+              A former teacher, principal and Student Achievement Officer with the Ontario Ministry, Weaver has been a board member of YEP for the past one year. Weaver has been working in the field of education for decades now. While there are several programs initiated by the Ministry and other organizations for students in schools, Weaver believes YEP stands out because of the importance it gives to application of knowledge. “In my background as a principal and teacher, I have realized that there’s a bunch of kids for whom school does not work. The structure is all wrong for their needs and learning styles. YEP is hooking those kids who do not see themselves as fitting in in school,” notes Weaver. 
+              <br/><br/>
+              According to Weaver, a school should be a place that focusses not just on students’ academic performance, but their well-being, and one that gives them a sense of belonging. YEP, he believes, is providing students that first step. “There’s definitely more to a school community than the piece of YEP. However, YEP gets them through the door. YEP makes them feel comfortable within the actual physical environment of the school,” he says.  
+              <br/><br/>
+              And what does Weaver believe is the biggest YEP factor? “Most of the after-school and summer programs are facilitated by adults, and they are done to and for students, not by students. That’s the huge benefit of YEP. It is all about students.”  
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section class="relative bg-tertiary" data-aos="fade-up" data-aos-duration="1000">
+      <div class="w-full container mx-auto px-4 py-24">                        
+
+        <p class="text-xl font-gibson mb-10">Read more stories</p>
+        <div class="flex flex-wrap -m-3 md:-m-5">
+
+          <div class="p-3 md:p-5 w-1/2 sm:w-1/4">
+            <a href="javascript:void(0)" data-popup="popup-1" class="overflow-hidden block"><img class="hover-scale-in" src="images/popup/thumnail1.png" /></a>
+          </div>
+          <div class="p-3 md:p-5 w-1/2 sm:w-1/4">
+            <a href="javascript:void(0)" data-popup="popup-2" class="overflow-hidden block"><img class="hover-scale-in" src="images/popup/thumnail2.png" /></a>
+          </div>
+          <div class="p-3 md:p-5 w-1/2 sm:w-1/4">
+            <a href="javascript:void(0)" data-popup="popup-3" class="overflow-hidden block"><img class="hover-scale-in" src="images/popup/thumnail3.png" /></a>
+          </div>
+          <div class="p-3 md:p-5 w-1/2 sm:w-1/4">
+            <a href="javascript:void(0)" data-popup="popup-4" class="overflow-hidden block"><img class="hover-scale-in" src="images/popup/thumnail4.png" /></a>
+          </div>
+          <div class="p-3 md:p-5 w-1/2 sm:w-1/4">
+            <a href="javascript:void(0)" data-popup="popup-5" class="overflow-hidden block"><img class="hover-scale-in" src="images/popup/thumnail5.png" /></a>
+          </div>
+          <div class="p-3 md:p-5 w-1/2 sm:w-1/4">
+            <a href="javascript:void(0)" data-popup="popup-6" class="overflow-hidden block"><img class="hover-scale-in" src="images/popup/thumnail6.png" /></a>
+          </div>
+          <div class="p-3 md:p-5 w-1/2 sm:w-1/4">
+            <a href="javascript:void(0)" data-popup="popup-7" class="overflow-hidden block"><img class="hover-scale-in" src="images/popup/thumnail7.png" /></a>
+          </div>
+          <div class="p-3 md:p-5 w-1/2 sm:w-1/4">
+            <a href="javascript:void(0)" data-popup="popup-8" class="overflow-hidden block"><img class="hover-scale-in" src="images/popup/thumnail8.png" /></a>
+          </div>
+          <div class="p-3 md:p-5 w-1/2 sm:w-1/4">
+            <a href="javascript:void(0)" data-popup="popup-9" class="overflow-hidden block"><img class="hover-scale-in" src="images/popup/thumnail9.png" /></a>
+          </div>
+          <div class="p-3 md:p-5 w-1/2 sm:w-1/4">
+            <a href="javascript:void(0)" data-popup="popup-10" class="overflow-hidden block"><img class="hover-scale-in" src="images/popup/thumnail10.png" /></a>
+          </div>
+          <div class="p-3 md:p-5 w-1/2 sm:w-1/4">
+            <a href="javascript:void(0)" data-popup="popup-11" class="overflow-hidden block"><img class="hover-scale-in" src="images/popup/thumnail11.png" /></a>
+          </div>
+          <div class="p-3 md:p-5 w-1/2 sm:w-1/4">
+            <a href="javascript:void(0)" data-popup="popup-12" class="overflow-hidden block"><img class="hover-scale-in" src="images/popup/thumnail12.png" /></a>
+          </div>
+          <div class="p-3 md:p-5 w-1/2 sm:w-1/4">
+            <a href="javascript:void(0)" data-popup="popup-13" class="overflow-hidden block"><img class="hover-scale-in" src="images/popup/thumnail13.png" /></a>
+          </div>
+          <div class="p-3 md:p-5 w-1/2 sm:w-1/4">
+            <a href="javascript:void(0)" data-popup="popup-14" class="overflow-hidden block"><img class="hover-scale-in" src="images/popup/thumnail14.png" /></a>
+          </div>
+          <div class="p-3 md:p-5 w-1/2 sm:w-1/4">
+            <a href="javascript:void(0)" data-popup="popup-15" class="overflow-hidden block"><img class="hover-scale-in" src="images/popup/thumnail15.png" /></a>
+          </div>
+          <div class="p-3 md:p-5 w-1/2 sm:w-1/4">
+            <a href="javascript:void(0)" data-popup="popup-16" class="overflow-hidden block"><img class="hover-scale-in" src="images/popup/thumnail16.png" /></a>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer relative z-10 text-white bg-black">
+        <div class="container w-full max-w-6xl px-4 pt-20 pb-6 mx-auto">
+
+            <div class="flex flex-col text-center md:flex-row md:text-left">
+
+                
+                <div class="md:mr-8 flex-1">
+                    <a href="index.html">
+                      <img class="inline-block" src="images/footer-logo.svg" />
+                    </a>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                    <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Who We Are</h6>
+
+                    <div class="links">
+                      <a href="#">Our Story</a>
+                      <a href="#">Staff and Board of Directors</a>
+                      <a href="#">News</a>
+                      <a href="#">Accountability</a>
+                      <a href="#">Our COVID-19 Response</a>
+                    </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">How it Works</h6>
+
+                  <div class="links">
+                    <a href="#">Type of Programs</a>
+                    <a href="#">Curriculm and Training Model</a>
+                    <a href="#">Program Locations and Case Studies</a>
+                    <a href="#">Partnerships</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Impacts</h6>
+
+                  <div class="links">
+                    <a href="#">Impacts and Benefits</a>
+                    <a href="#">Research and Insights</a>
+                    <a href="#">Stories</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Get Involved</h6>
+
+                  <div class="links">
+                    <a href="#">Donate</a>
+                    <a href="#">Volunteer</a>
+                    <a href="#">Corporate Engagement</a>
+                    <a href="#">Speaking Engagements</a>
+                    <a href="#">Start a YEP Program</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Events</h6>
+
+                  <div class="links">
+                    <a href="#">Soccer for Charity</a>
+                    <a href="#">Bubble Soccer for Charity</a>
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center md:justify-end text-xs leading-relaxed mt-12">
+
+              <div class="social-links flex items-center">
+                <a href="#" class="mr-6"><img src="images/icons/footer-facebook.svg" /></a>
+                <a href="#" class="mr-6"><img src="images/icons/footer-twitter.svg" /></a>
+                <a href="#" class="mr-6"><img src="images/icons/footer-linkedin.svg" /></a>
+              </div>
+
+              <p style="color: #8d8d8d;">Copyright 2020<br/>
+                Youth Empowering Parents</p>
+            </div>
+            
+        </div>
+    </footer>
+  </div>
+
+   
+  <!-- POPUPS -->
+
+  <div class="popup-overlay">
+
+    <!-- POPUP 1 -->
+    <div class="popup" id="popup-1">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="md:float-right md:w-1/2 mb-6 md:ml-6">
+              <img class="inline-block" src="images/popup/1.JPG" />
+            </div>
+                
+            <h2 class="font-bold font-proxima text-xl">The Birth of a Young Leader</h2>
+            
+            <p class="leading-relaxed mt-6"> 
+              From having no patience to becoming a youth director, Daniel Bonilla’s rise to leadership is what we are all about.  At Youth Empowering Parents (YEP), it is not just about tutoring adults. It’s about empowering youth to become leaders of tomorrow, helping them build and value relationships and communities. 
+              <br/><br/>
+              Daniel has been a part of For Youth Initiative (FYI), a non-profit that runs youth-focussed programs, and which hosts a YEP program, for more than two years now. When he first joined the YEP program that was run at FYI, Daniel thought he did not have the patience to teach an adult. However, he still gave it a try, and, thus, began his journey of change. 
+              <br/><br/>
+              From being a youth participant for YEP, Daniel went on to become a part of the coordinators’ team. He was also selected to be a part of the Youth Advisory Committee of FYI. By the third term, Daniel became the main coordinator of the YEP program. He is currently the Youth Director for FYI. According to Daniel, it was YEP and FYI that molded him into the leader he is today. “YEP helped to increase my leadership skills. It has helped improve my patience level and writing skills as well,” he says. 
+              <br/><br/>
+              So, what message does Daniel want to leave for the youth who have not heard about YEP? “Join the program. It will help you improve a lot of skills and learn new ones. Students come here to have fun and it changes into an experience,” he says. 
+              <br/><br/>
+              Daniel’s YEP experience, however, is not just limited to improving his skills. “Sometimes, when you are teaching them, the seniors start telling you their stories, everything that they have been through in their lives, they start giving you advice, and you start relating to it. You build a connection,” he says. For Daniel, that is one of the biggest takeaways from YEP.
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 1 END -->
+
+    <!-- POPUP 2 -->
+    <div class="popup" id="popup-2">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="md:float-right md:w-1/2 mb-6 md:ml-6">
+              <img class="inline-block" src="images/popup/2.JPG" />
+            </div>
+                
+            <h2 class="font-bold font-proxima text-xl">She used to rely on her husband always, now she can do it on her own</h2>
+            
+            <p class="leading-relaxed mt-6"> 
+              Estella Garcia moved to Canada from El Salvador in 2007 and she instantly fell in love with the country. What she likes most: the bus drivers. “Here, the bus drivers are very nice. If they find someone on a wheelchair waiting to board the bus, they make sure that the person can get on it and travel comfortably. Back in my country, they don’t do that.” 
+              <br/><br/>
+              However, while she loved the country, adjusting to the new lifestyle was tough. She did not know the language and culture, nor the assistance of technology to get around. She was scared to commute alone and always used to rely on her husband. 
+              <br/><br/>
+              Not anymore. “Now I do everything alone. I feel Canadian,” says Estella, beaming proudly. 
+              Estella has taken other skills training classes before. However, what she likes about YEP is how it is more personalized. So, how does she feel when taught by a youth? “I feel young,” says Estella with a blush on her face.
+              <br/><br/>
+              Before coming to YEP, Estella was scared of getting a smartphone or computer as she did not know how to use it. “Now, I know how to use Facebook and WhatsApp. I can talk to my family in El Salvador. I can also watch news about my country through computers,” says Estella, beaming proudly. 
+              However, Estella says she is not done yet. She wants to learn more. “I want to know how to use Gmail, save photos on the computer, upload and download them.” And she knows that she has come to the right place. 
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 2 END -->
+
+    <!-- POPUP 3 -->
+    <div class="popup" id="popup-3">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="md:float-right md:w-1/2 mb-6 md:ml-6">
+              <img class="inline-block" src="images/popup/3.JPG" />
+            </div>
+                
+            <h2 class="font-bold font-proxima text-xl">“I got to see my sister’s face after 30 years”</h2>
+            
+            <p class="leading-relaxed mt-6"> 
+              It has been 30 years since Jamie Hernandez moved to Canada. Thirty years since he has seen his loved ones, who live in his home country of Guatemala. He calls his family once a week using calling cards, but this costs money and it isn’t near the same as seeing their faces. And one day, a young YEP volunteer showed Hernandez an app through which he is able to connect with his family members and friends, chat with them, and, finally, see their faces after 30 years. The pure ecstasy Hernandez felt then cannot be described in words. The joy when the young volunteer at YEP taught him how to use Facebook!
+              <br/><br/>
+              For Hernandez, moving to Canada was about finding a safe home. Coming from Guatemala, Canada promised him safety and a chance to start a new life. And though Hernandez finally felt safe, he had new battles to fight. Adjusting to Canadian life was tough since he did not know the language, the people, the culture.  
+              <br/><br/>
+              While he did attend other community classes before, it was tough for him to afford the fees. “I am a pensioner. So, I don’t have much money. Then I heard about YEP and I moved here,” he says. Hernandez has been coming to YEP for two years now. “Children are patient. I like learning from them,” he adds. 
+              Hernandez now knows how to use a mobile phone, the internet, Facebook, Messenger and WhatsApp, and even take a photo. “Now I can talk to my sister and my niece back home through Facebook. I am able to know how they are and how everyone in my country is doing,” he says, smiling. 
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 3 END -->
+
+    <!-- POPUP 4 -->
+    <div class="popup" id="popup-4">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="md:float-right md:w-1/2 mb-6 md:ml-6">
+              <img class="inline-block" src="images/popup/4.JPG" />
+            </div>
+                
+            <h2 class="font-bold font-proxima text-xl">“It made me cry”</h2>
+            
+            <p class="leading-relaxed mt-6"> 
+              Week after week, Michelle Lee found herself exhausted as she dealt with rude remarks from one student at the YEP program at Lawrence Heights School. It felt like no matter what she did, she was faced with resistance.  However, she knew it wasn’t going to be an easy task. And by the second session of the program, her once “trouble” child had become more polite and even invited her to a play he was part of. 
+              <br/><br/>
+              Michelle states that the student went from being a kid who was always called to the office to doing really good at school and being part of at least three after-school programs.
+              <br/><br/>
+              For Michelle, this is the best part of being a YEP facilitator. “I love seeing people’s progress from the time they join the program to when it ends.” 
+              <br/><br/>
+              Michelle has been a program facilitator for YEP since 2016. “YEP is different because it mainly targets schools in areas where there is more trouble. It’s like killing two birds with one stone. Not only are they helping the immigrants and giving the students a way to gain more skills, but it is also keeping the students off the streets and out of trouble,” she says. 
+              <br/><br/>
+              Michelle fell in love with the YEP program the moment she heard about it. It’s been around three years since then and she has only three words to describe it: “I love it.” 
+              <br/><br/>
+              While Michelle finds it tough now to still be a program facilitator because of her hectic schedule, something still holds her here and makes her want to remain a part of the YEP family. “YEP keeps you humble. Sometimes, it makes me so emotional that I cry. It feels so great to be able to help others and see their progress. Being a part of that gives you so much more than anything else.”
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 4 END -->
+
+    <!-- POPUP 5 -->
+    <div class="popup" id="popup-5">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="md:float-right md:w-1/2 mb-6 md:ml-6">
+              <img class="inline-block" src="images/popup/5.JPG" />
+            </div>
+                
+            <h2 class="font-bold font-proxima text-xl">She saw their excitement and knew she was at the right place</h2>
+            
+            <p class="leading-relaxed mt-6"> 
+              On Vanessa Oppong’s first day as a program facilitator for Youth Empowering Parents, the internet was down and the youth were not able to teach the adults the lesson they had planned for that day. That’s when the program facilitators decided to teach the adults how to take photos on their smartphones. The excitement on the adults’ faces on learning how to take selfies was enough for Vanessa to realize that she had come to the right place. “One of the adults was really excited that she could now upload her photos on Facebook. It felt really good,” recalls Vanessa. 
+              <br/><br/>
+              Vanessa has been with YEP since September 2018. She currently facilitates the YEP program run at Black Creek Community Health Centre at Yorkgate Mall. According to Vanessa, what makes YEP different from other youth programs is how it is mutually beneficial. “The program helps the youth improve their skills, learn to be more patient, and, during that process, the youth are helping adults,” she notes, adding, “A lot of summer and after-school programs are focussed on helping students, but in this program, the students help somebody else.”
+              <br/><br/>
+              Vanessa feels the program is gaining more popularity as more youth are talking about it with their friends. One of the main reasons for that, she believes, is how it helps students to improve their leadership skills. “A lot of students are shy when they come in, and they don’t really want to talk. However, as we train them, they start getting comfortable and they want to learn new stuff. Now, I see the students just walk up to seniors and initiate a conversation with them. They couldn’t do it in the beginning.”
+              <br/><br/>
+              One of the things that Vanessa likes the most about YEP is getting the chance to meet new people. “In the process of meeting new people, I get the opportunity to train them (youth), who, in turn, teach the adults. It’s like a chain. It feels great to be a part of it,” she says.
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 5 END -->
+
+    <!-- POPUP 6 -->
+    <div class="popup" id="popup-6">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="md:float-right md:w-1/2 mb-6 md:ml-6">
+              <img class="inline-block" src="images/popup/6.JPG" />
+            </div>
+                
+            <h2 class="font-bold font-proxima text-xl">Kids Have Ideas Too!</h2>
+            
+            <p class="leading-relaxed mt-6"> 
+              There is something that is universally known about children: they like to ask a lot of questions. As Albert Einstein put it “The important thing is not to stop questioning. Curiosity has its own reason for existing.” 
+              <br/><br/>
+              Abirami, a student at the University of Toronto, was tasked with answering these questions when it came to all things recycling. As part of her studies in the public health program, she was required to do a community placement and was placed at YEP. She helped run the environmental program in which students in Grades 4-6 were taught how to environmental literacy and then asked to teach their parents at home.
+              <br/><br/>
+              “Originally, we thought the kids wouldn’t be very interested in the topics, but we found they really liked discussing their ideas and were really interested about the environment,” says Abirami. At first, her and her colleague didn’t think about including much time for discussion. They soon learned that kids were interested and curious about recycling. In order to help them with their understanding, Abirami would go through a discussion and then a quick activity at the end such as asking them where a coffee cup belongs: the recycling bin or in the trash?
+              <br/><br/>
+              Abirami says that what made YEP so different from other programs was that whereas other programs have an instructor that teaches everybody, here she acted as more of a coach, the kids were doing the teaching when they went home. “It gives the students independence and the adults gain different skills such as learning to improve their waste management skills,” Abirami says.  Not only this, but the kids learned to be more empathetic and more patient. 
+              <br/><br/>
+              The kids in the program and her had to get creative when it came to addressing obstacles preventing them from recycling. Some of the kids in the program lived in apartment complexes where there were no recycling bins. The solution was to do things like write a letter to the superintendent or the local MP to help fix this problem. In addition to this, the kids also thought of initiatives such as banning single use plastics in schools and using reusable shopping bags.
+              <br/><br/>
+              She says that even for the kids who didn’t have much of an interest in the topic of recycling, she feels that this program has helped create more of an engagement in the community. “They wanted to be more engaged with the community and I’d like to think we helped them with that.” 
+              <br/><br/>
+              And what did Abirami learn? “As adults, sometimes we just need to listen. Kids have ideas too! From contacting local MPs to using reusable shopping bags, they have the ability to come up with solutions on their own.” It has helped them become more involved in the community and assess the issues that exist within it. By doing this, she hopes it will push them to continue to ask questions and demand changes to better the community. 
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 6 END -->
+
+    <!-- POPUP 7 -->
+    <div class="popup" id="popup-7">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="md:float-right md:w-1/2 mb-6 md:ml-6">
+              <img class="inline-block" src="images/popup/7.JPG" />
+            </div>
+                
+            <h2 class="font-bold font-proxima text-xl">His face lights up when he sees them happy</h2>
+            
+            <p class="leading-relaxed mt-6"> 
+              Thuan Lee started volunteering with Youth Empowering Parents in February this year and, within two months, this 16-year-old already found himself at ease with his new responsibilities. “It’s a fun experience. You get to help people and it just puts a smile on your face when you see them happy,” he says.  
+              <br/><br/>
+              Being a passionate video gamer, technology comes naturally to him. So, when Thuan came to YEP and had to teach adults computer skills, he was happy. He got a chance to help people by doing the things he loves. Thuan teaches adults how to use a computer, smartphone, Facebook, Messenger and WhatsApp. Thuan believes these classes are important as there are several seniors who have not even heard about Facebook or WhatsApp. “I believe it’s good for them to know the basic technology we have now,” he says. 
+              <br/><br/>
+              So, how do his adult partners feel after learning something new? “I feel they are happier. They get excited after you help them, and they have learned what to do,” says Thuan. 
+              <br/><br/>
+              While Thuan has been with YEP only for two months now, he feels it has already helped him improve his skills and made him a better person. “I feel happier and more confident while talking to people than I did before. I feel like I am more patient and understanding towards others,” he says. 
+              <br/><br/>
+              If you ask this young volunteer what he likes most about his YEP experience, his face will light up with a smile, and you will be able to find your answer on his face. “It makes me happy that they know how to do things on their own now.”
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 7 END -->
+
+    <!-- POPUP 8 -->
+    <div class="popup" id="popup-8">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="md:float-right md:w-1/2 mb-6 md:ml-6">
+              <img class="inline-block" src="images/popup/8.JPG" />
+            </div>
+                
+            <h2 class="font-bold font-proxima text-xl">Inspiring Hope and Confidence in the Leaders of Tomorrow</h2>
+            
+            <p class="leading-relaxed mt-6"> 
+              American lawyer and politician Brad Henry once said that “a good teacher can inspire hope, ignite the imagination, and instill a love of learning.”  
+              <br/><br/>
+              For Mariam, her high school teacher did just that. Her teacher inspired Mariam to become as good of a teacher as she was. Mariam’s goal is to impact the lives of students in the same way her teacher did hers. 
+              <br/><br/>
+              So what better way to do that then to work with “at-risk youth” in an underserved community. As part of her studies, Mariam is required to do both a community and school placement for her learning development. As part of the community requirement, she was paired with YEP and became facilitator for our Nelson Mandela Park Public School program.
+              <br/><br/>
+              The program run in Nelson Mandela Park has elementary students in grades 7-8 teach adults in the neighborhood computer skills. Located in Regent Park, the community has a 44.4% poverty rate. With basic needs not being met, it can be difficult for students to stay engaged. As a result, grades in this community as seen with Nelson Park Public School are often rank poorly in reading, writing, and math skills. 
+              <br/><br/>
+              So how does one keep students engaged when external factors are determined to keep them down? Mariam states the task wasn’t an easy one. “A challenge that came when working with this group was thinking of methods to keep the kids engaged at all times.” By having visual presentations it helped the student stay focused on what the goals for the day were.
+              <br/><br/>
+              At the beginning, Mariam felt uneasy about being a facilitator. “There was the constant thought of ‘how am I going to facilitate students who I had no relationship with and run a program.’” Mariam says that the program helped her become more confident when working with students, even those she had no connection with easily.  She learned how to be a more patient person by watching these kids practice patience and compassion with the adult learners.
+              <br/><br/>
+              As the weeks progressed, the students developed meaningful relationships with the adults, and improved greatly with their own self-confidence. She notes that these kids began to take the lead. For any youth looking to volunteer Mariam says YEP “challenges [students] and presents them with situations that they might not encounter as a learner. They not only learn a lot about themselves but also about their surrounding community.”
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 8 END -->
+
+    <!-- POPUP 9 -->
+    <div class="popup" id="popup-9">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="md:float-right md:w-1/2 mb-6 md:ml-6">
+              <img class="inline-block" src="images/popup/9.JPG" />
+            </div>
+                
+            <h2 class="font-bold font-proxima text-xl">Creating positivity in Regent Park</h2>
+            
+            <p class="leading-relaxed mt-6"> 
+              “YEP is a contrast to all of the negative things that happen in my neighborhood,” Yussef says. “Just by living here, us youth aren’t viewed in a positive light, even if we aren’t guilty of anything. Here, we get to show a side that many didn’t know existed.” Yussef is a youth tutor, who joined YEP in March 2012, At that time, an inquiry by a local newspaper revealed that between March 26 2012 and May 28 2012, police fired close to 90 bullets fired in five different incidents in Regent Park.  Yussef wanted to change the perception of Regent Park.
+              <br/><br/>
+              Regent Park is Canada’s oldest and largest social housing complex, operated by Toronto Community Housing Corporation (TCHC). It has over 5,000 residents, a third of whom have only recently arrived to Canada. It contains high levels of poverty, crime, and a disproportionately high population of youth and immigrants. 
+              <br/><br/>
+              “Many adults can live here for many years and still feel like they just came to Canada. This program is taking steps in the right direction, and is getting them integrated into Canada.” 
+              <br/><br/>
+              During Yussef’s time in the program, he has not only been provided an opportunity to mature but has helped four Regent Park adults in the process. The program, he feels, is not just about helping adults; it’s about allowing youth to feel valuable and in doing so creating future leaders to create a shift in the story of Regent Park. 
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 9 END -->
+
+    <!-- POPUP 10 -->
+    <div class="popup" id="popup-10">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="md:float-right md:w-1/2 mb-6 md:ml-6">
+              <img class="inline-block" src="images/popup/10.JPG" />
+            </div>
+                
+            <h2 class="font-bold font-proxima text-xl">Selam and her mother, Yordanos</h2>
+            
+            <p class="leading-relaxed mt-6"> 
+              Selam starts off by showing her mother, Yordanos how to turn on the computer. She points to the power button and describes to her mother that is the international symbol for power. From there, the rest of the story unfolds. Her mother Yordanos gains confidence day by day and soon learns everything from navigating the internet to how to fill out a job application online.  
+              <br/><br/>
+              At YEP, Selam teaches her mother many computer skills. This is nothing new for Selam. She has helped her mother at home with many things in the past. 
+              <br/><br/>
+              So why bother coming to YEP? Yordanos, her mother states “At home, we automatically talk in our native language,” Here my goal is to learn as much English and computer skills, and my daughter is really helpful. She is getting professional training on how to be a great teacher at just a young age.” 
+              <br/><br/>
+              At YEP, not only do the adults get the help needed to navigate Canadian society but in doing so the youth benefit greatly. They learn how to be better communicators and teachers. 
+              <br/><br/>
+              Selam enjoys the role reversal. “At home, my parents call the shots. Here, I call the shots. I’m learning how to be an adult. And I think I’m speaking for most kids like me, my mother sees another side of me and I see another side of my mother. It’s really cool.”  It’s about youth being able to see their potential and through YEP she is learning skills to determine her success as an adult. Parents see another side of their children and youth uncover their potential. 
+              <br/><br/>
+              It’s a win win. 
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 10 END -->
+
+    <!-- POPUP 11 -->
+    <div class="popup" id="popup-11">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="md:float-right md:w-1/2 mb-6 md:ml-6">
+              <img class="inline-block" src="images/popup/11.JPG" />
+            </div>
+                
+            <h2 class="font-bold font-proxima text-xl">WAIT, WHY IS THIS IN CAPS?</h2>
+            
+            <p class="leading-relaxed mt-6"> 
+              Look down at what you’re currently using to read this. One wrong click of button and all the tabs you had open suddenly disappear. One wrong click and suddenly EVERYTHING IS IN CAPS. For those unfamiliar with technology, it can be a frustrating experience using technology. 
+              <br/><br/>
+              Many young people forget that a computer isn’t something that one is born knowing how to use. The youth of today grew up with computers, but for adults it can be a scary experience. Ferial had to face her fears and with YEP, she did.  
+              <br/><br/>
+              Ferial has learned and continues to learn how to use this vital tool in her everyday life. Before attending YEP, she went to a traditional computer course in her neighbourhood. However, the instructor had to teach dozens of students, all with varying levels of skill. As a result, she was not able to get the attention she desired. Defeated, she ended up leaving that class. 
+              <br/><br/>
+              When she heard about YEP, she jumped at the opportunity. YEP offered customized one-on-one teaching. With the help of youth who had grown up with this technology, the complex task of learning quickly became a rather simple one. 
+              <br/><br/>
+              “I’m really happy to be learning from these young people.”
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 11 END -->
+
+    <!-- POPUP 12 -->
+    <div class="popup" id="popup-12">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="md:float-right md:w-1/2 mb-6 md:ml-6">
+              <img class="inline-block" src="images/popup/12.JPG" />
+            </div>
+                
+            <h2 class="font-bold font-proxima text-xl">“Woah!”</h2>
+            
+            <p class="leading-relaxed mt-6"> 
+              When she heard about the program, Laiba Zaman was immediately hooked. She soon became one of the first volunteers for YEP’s program in Spain, and her mother a participant. 
+              <br/><br/>
+              That was in 2015. A year later, she became a program facilitator. In Spain, the program offers Catalan and Spanish language courses, in addition to computer classes. The program is focused on helping immigrants become a part of society. 
+              <br/><br/>
+              For Laiba, the important takeaway from the program was the impact it had on her mother. “My mother went to other language schools for ten years, but I saw no difference in her. Later, when we started this project, I noticed that she was getting better. That was the most important thing for me: it brought a change in my mother.” 
+              <br/><br/>
+              Laiba has many stories to share of her experience working with adults. “I remember when I was a student tutor, there was a woman who came to class for the first time. It was, in fact, her first time been in any classroom. She never had any education because her mom died when she was young and she had to take care of her siblings. After the lesson, when she wrote her name on the whiteboard, she was in tears and said, “My dream is now fulfilled.” She wanted to learn how to write her name. That was her dream.”  
+              <br/><br/>
+              For things that are often taken for granted as common knowledge, Laiba was able to not only help her mother but others in reaching their goals. Laiba continues to be with the program and says it has helped improve her self-confidence to a great extent. 
+              <br/><br/>
+              “I am a student. So, for me, being a teacher was like “Woah!” I feel impressed with myself because when I started out, I did not think that I would be able to do this.”  
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 12 END -->
+
+    <!-- POPUP 13 -->
+    <div class="popup" id="popup-13">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="md:float-right md:w-1/2 mb-6 md:ml-6">
+              <img class="inline-block" src="images/popup/13.JPG" />
+            </div>
+                
+            <h2 class="font-bold font-proxima text-xl">Fatema Hoque and Firdaus Rashid</h2>
+            
+            <p class="leading-relaxed mt-6"> 
+              Fatema Hoque (left) first met Firdaus Rashid (right) at Youth Empowering Parents in February 2014. Since then, Firdaus has taught her everything she knows about computer skills — much to Fatema’s surprise!
+              <br/><br/>
+              “I was amazed that someone so young could teach so well.” Fatema highlights the feeling off comfort, with Firdaus coming from a similar background and speaking the same native language. “She’s a good teacher because every time I speak my native language, she forces me to go back to English.”
+              <br/><br/>
+              Firdaus enjoyed teaching someone she never met before. “It was just like helping my own parents,” she says. “We try to talk English all the time because that’s the kind of practice that she needs, but we can fall back in native language if she needs translation.”
+              <br/><br/>
+              They often run into each other in their neighbourhood, and they’re the best of friends! 
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 13 END -->
+
+    <!-- POPUP 14 -->
+    <div class="popup" id="popup-14">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="md:float-right md:w-1/2 mb-6 md:ml-6">
+              <img class="inline-block" src="images/popup/14.JPG" />
+            </div>
+                
+            <h2 class="font-bold font-proxima text-xl">“Sorry, I don’t speak English”</h2>
+            
+            <p class="leading-relaxed mt-6"> 
+              When Sibhja Waqar used to go out shopping, the only words she spoke was, “Sorry, I cannot speak the language." She needed a translator for everything. Not anymore. “Now, I can handle everything alone,” she says.
+              <br/><br/>
+              Sibhja feels the program is providing a great opportunity to immigrants. “This organization is helping people from several countries. In other schools, the teachers speak only in main language. Here, everyone is friendly and interacts freely. It feels like a small family now,” she adds.
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 14 END -->
+
+    <!-- POPUP 15 -->
+    <div class="popup" id="popup-15">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="md:float-right md:w-1/2 mb-6 md:ml-6">
+              <img class="inline-block" src="images/popup/15.JPG" />
+            </div>
+                
+            <h2 class="font-bold font-proxima text-xl">“When Kids are Difficult, the Education System Kind of Quits on Them.”</h2>
+            
+            <p class="leading-relaxed mt-6"> 
+              At YEP, we don’t believe that kids are the problem, rather we believe in the solution. Alastair Roberts is a current employee at YEP and manages the dance program at our Lord Dufferin Public School. In this program, the students are the teachers and show their teachers how to dance. Alastair first came to us as part of a community placement required for his studies at George Brown College for the Social Service Program.  
+              <br/><br/>
+              Alastair admits “working with youths wasn’t my first choice.” However, after working with the kids in the program his perception changed and ultimately led to him working at YEP. He says that when measuring the success of kids, sometimes you need to look past the surface. “For youth, especially like this it's important to engage them, talk to them, and be there for them. When kids are difficult, the education system kind of quits on them,” says Alastair. 
+              <br/><br/>
+              Although the kids still swore and seemed disinterested at times, changes were happening. By not quitting on these students, Alastair says that these kids began to have more self-confidence and attendance. One student that was part of the program stated that “I like how the kids taught the teachers, because in class when they are teaching me, I sometimes feel dumb, and I don’t want to feel that. I want to teach somebody what they can learn from me.” For once, the students were the ones with something valuable to offer and it helped them feel empowered.
+              <br/><br/>
+              When dealing with negative behaviour, Alastair stated they would do things like talking circles. Not only this, but Alistair quickly learned that he would need to change the way the program time was structured. Originally, the kids would eat prior to starting to dance class. However, what he noticed was by having them eat first they would then not be motivated to teach. By switching the meals to the end of class, the food became a reward for the students after all their hard work. 
+              <br/><br/>
+              Dance is a way of having these kids do something fun, while subtly teaching them important social skills such as communication and patience. In doing so, the teachers at Lord Dufferin have noted that overall the kids have improved in their listening skills and have developed a better rapport with their teachers. 
+              <br/><br/>
+              As the principal of the school notes, “I felt that this program really helped with their self-esteem. I really wanted them to have an opportunity to see themselves as having gifts and strengths, and this program allowed for that to flourish. I wanted the teachers to recognize the strengths of some of the students that often don’t show that side of themselves.”
+              <br/><br/>
+              Through this process, Alastair has also learned quite a bit. He says he has learned to be more patient, how to be a better facilitator, and acknowledge when to step back. Adults are conditioned to take the lead when faced with a group of kids, in this case it’s the students who take the lead. One of things he liked most about the program: “even though it was challenging, the group of students we taught were hilarious.” This program shows that there is more than just one way of teaching and learning. 
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 15 END -->
+
+    <!-- POPUP 16 -->
+    <div class="popup" id="popup-16">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="md:float-right md:w-1/2 mb-6 md:ml-6">
+              <img class="inline-block" src="images/popup/16.png" />
+            </div>
+                
+            <h2 class="font-bold font-proxima text-xl">Kids are smart. They figure things so fast.</h2>
+            
+            <p class="leading-relaxed mt-6"> 
+              Nicole wants to be a teacher. Her inspiration? She wanted to make a difference in kids’ lives. Nicole is currently studying to be a teacher at York University and has been managing the YEP program at Rose Avenue Public School as part of her studies. 
+              <br/><br/>
+              Rose Avenue Public School is located in the St. James Town community, in Toronto. This community has a high number of immigrants with 60% of first generation people being born outside of Canada. Here’s something that isn’t high: their academic performance. The school has poor academic performance amongst young people and resides in a densely populated community with many newcomers to Canada. 
+              <br/><br/>
+              Nicole knew she had a challenge on her hands but it was a challenge she was eager to take. As part of the program at York, students are sent to different community placements as part of student development and it’s how she landed at YEP. “Going into it, there was the assumption that St. James Town is unsafe. When working with these kids you don’t feel those types of things.” So what was her experience really like?
+              <br/><br/>
+              “No matter how much you learn, you never know until you actually do it,” Nicole says. She experienced this first hand when struggling to keep the kids engaged. The program runs during the lunch hour and has the kids teaching adults how to use computers and smartphones. Due to the timing of the program, Nicole says that “these kids are already restless by being in class all morning.” Despite the restlessness, Nicole was determined to make a difference and so she wasn’t going to give up so easily. The solution: getting their minds engaged with games and pairing them up quickly with adults to keep them motivated.
+              <br/><br/>
+              Kids would do simple jigsaw puzzles which would help keep them engaged and focused. It prepared the kids to remain focused and engaged to better help the adult learners. As the program progressed, the kids became more confident and adaptable. “If there was something an adult wanted to learn and a kid didn’t understand it, they would Google it and then teach it to them,” Nicole says. 
+              <br/><br/>
+              Overall, the program has made her think about just how capable kids are. She hopes that when she gets the chance to be in front of the classroom, she will be able to implement some of the things taught at YEP such as having her students teach others new skills and helping them become more confident and better communicators. 
+            </p>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 16 END -->
+
+  </div>
+
+  <!-- POPUP END -->
+</body>
+
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ 
+ <!-- Animate On Scroll -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+ <script src="js/main.js"></script> 
+
+</html>
