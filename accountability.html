@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+  <title>YEP</title>	
+
+  <meta name="keywords" content="YEP" />
+  <meta name="description" content="YEP">
+  <meta name="author" content="https://github.com/farhadnawab">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    
+  <!-- Tailwind CSS -->
+  <link href="css/tailwind.min.css" rel="stylesheet">
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/c772f6a9db.js" crossorigin="anonymous"></script>
+
+  <!-- Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ </head>
+ <body class="not-front">
+
+  <div class="main-wrapper overflow-hidden relative">
+    
+    <!--Nav-->
+    <nav id="header" class="absolute w-full z-30 top-0 left-0">
+
+        <div class="w-full container mx-auto px-4 py-6 flex items-center">
+
+            <div data-aos="fade-right" data-aos-duration="600">
+                <a class="block logo" href="index.html">
+                    <img src="images/logo.svg" />
+                </a>
+            </div>
+
+            <div class="flex-grow flex justify-end pl-10 xl:pl-0" data-aos="fade-left" data-aos-delay="50" data-aos-duration="600">
+              <ul class="main-menu xl:flex hidden">
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Impacts</a></li>
+                <li><a href="#">Get Involved</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="donate shadow-type-2">Donate</a></li>
+              </ul>
+              <button id="nav-toggle" class="inline-block xl:hidden align-middle appearance-none focus:outline-none" type="button" onclick="openMenu()">
+                <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="w-full h-full py-20 px-5 z-50 bg-primary fixed top-0 left-0" id="nav-content">
+                <button class="absolute top-0 right-0 mr-5 mt-5" type="button" onclick="closeMenu()">
+                    <svg width="36px" height="36px" viewBox="0 0 36 36">
+                        <path d="M13.2813 11.7189L13.2813 0.780128C13.2813 0.349208 12.9319 -0.00012207 12.501 -0.00012207L12.499 -0.00012207C12.0681 -0.00012207 11.7188 0.349208 11.7188 0.780128L11.7188 11.7189L0.78025 11.7189C0.34933 11.7189 0 12.0682 0 12.4991L0 12.5011C0 12.932 0.34933 13.2814 0.78025 13.2814L11.7188 13.2814L11.7188 24.2196C11.7188 24.6505 12.0681 24.9999 12.499 24.9999L12.501 24.9999C12.9319 24.9999 13.2813 24.6505 13.2813 24.2196L13.2813 13.2814L24.2197 13.2814C24.6507 13.2814 25 12.932 25 12.5011L25 12.4991C25 12.0682 24.6507 11.7189 24.2197 11.7189L13.2813 11.7189Z" transform="matrix(0.7071066 0.7071069 -0.7071069 0.7071066 17.67773 0)" id="Combined-Shape" fill="#1A1919" fill-rule="evenodd" stroke="none"></path>
+                    </svg>
+                </button>
+
+                <ul class="list-reset flex h-full flex-col w-full max-w-2xl mx-auto text-3xl text-white font-light capitalize align-center justify-center text-center">
+                    <li class="mb-5">
+                        <a href="#">Who We Are</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">How It Works</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Impacts</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Get Involved</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Events</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>                
+            </div>
+            <!-- Mobile Menu - END -->
+            
+        </div>
+    </nav>
+
+    <!-- Hero Section-->
+    <section class="hero-section relative" style="background-image: url('images/accountability-hero.png')">
+      
+      <div class="flex w-full container mx-auto px-4 items-center">
+
+        <div class="w-3/5 text-secondary" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="-1000">
+          <h1 class="font-bold leading-none" data-aos="fade-right" data-aos-delay="500" data-aos-offset="-1000">Accountability</h1>
+
+          <p class="text-lg mt-6 max-w-lg leading-normal" data-aos="fade-right" data-aos-delay="700" data-aos-offset="-1000">Read our annual reports and about our emergency response efforts</p>
+          
+        </div>
+
+      </div>
+
+      <div class="hero-bottom"><img src="images/hero_bottom.png" /></div>
+
+    </section>
+
+
+    <!-- "Our COVID-19 response" Section -->
+    <section class="relative tab tab-accountability" data-aos="fade-up" data-aos-duration="1000">
+
+      <div class="flex md:flex-row-reverse flex-col md:flex-row w-full container mx-auto px-10">
+        <div class="w-full text-center self-center mb-4 md:mb-0">
+          Our COVID-19 response
+        </div>  
+        <div class="flex tab-buttons justify-center md:justify-start">
+          <a href="javascript:void(0)" data-target="tab-1">2019</a>
+          <a href="javascript:void(0)" data-target="tab-2">2018</a>
+          <a href="javascript:void(0)" data-target="tab-3">2017</a>
+          <a href="javascript:void(0)" class="active" data-target="tab-4">2016</a>
+        </div>
+      </div>
+      <div class="bg-tertiary">
+        <div class="w-full container mx-auto px-4 py-32">   
+          
+          <div class="tab-content" id="tab-1">
+
+            <!-- Open Book -->
+            <div class="open-book" style="background-image: url('images/book.png');">
+              <a href="javascript:void(0)" class="arrow-left"></a>
+              <a href="javascript:void(0)" class="arrow-right"></a>
+
+            </div>
+            <!-- Open Book END -->
+
+          </div>
+          <div class="tab-content" id="tab-2">
+
+            <!-- Open Book -->
+            <div class="open-book" style="background-image: url('images/book.png');">
+              <a href="javascript:void(0)" class="arrow-left"></a>
+              <a href="javascript:void(0)" class="arrow-right"></a>
+
+            </div>
+            <!-- Open Book END -->
+
+          </div>
+          <div class="tab-content" id="tab-3">
+
+            <!-- Open Book -->
+            <div class="open-book" style="background-image: url('images/book.png');">
+              <a href="javascript:void(0)" class="arrow-left"></a>
+              <a href="javascript:void(0)" class="arrow-right"></a>
+
+            </div>
+            <!-- Open Book END -->
+
+          </div>
+          <div class="tab-content active" id="tab-4">
+            <!-- Open Book -->
+            <div class="open-book" style="background-image: url('images/book.png');">
+              <a href="javascript:void(0)" class="arrow-left"></a>
+              <a href="javascript:void(0)" class="arrow-right"></a>
+
+              <div class="pages">
+                
+                <!-- Page - 1 -->
+                <div class="page active">
+                  <div class="page-left">
+                    <img src="images/2016/2016 Donor Report YEP pages v3_pages-to-jpg-0001.jpg" />
+                  </div>
+                  <div class="page-right">
+                    <img src="images/2016/2016 Donor Report YEP pages v3_pages-to-jpg-0002.jpg" />
+                  </div>
+                </div>
+
+                <!-- Page - 2 -->
+                <div class="page">
+                  <div class="page-left">
+                    <img src="images/2016/2016 Donor Report YEP pages v3_pages-to-jpg-0003.jpg" />
+                  </div>
+                  <div class="page-right">
+                    <img src="images/2016/2016 Donor Report YEP pages v3_pages-to-jpg-0004.jpg" />
+                  </div>
+                </div>
+
+                <!-- Page - 3 -->
+                <div class="page">
+                  <div class="page-left">
+                    <img src="images/2016/2016 Donor Report YEP pages v3_pages-to-jpg-0005.jpg" />
+                  </div>
+                  <div class="page-right">
+                    <img src="images/2016/2016 Donor Report YEP pages v3_pages-to-jpg-0006.jpg" />
+                  </div>
+                </div>
+
+                <!-- Page - 4 -->
+                <div class="page">
+                  <div class="page-left">
+                    <img src="images/2016/2016 Donor Report YEP pages v3_pages-to-jpg-0007.jpg" />
+                  </div>
+                  <div class="page-right">
+                    <img src="images/2016/2016 Donor Report YEP pages v3_pages-to-jpg-0008.jpg" />
+                  </div>
+                </div>
+
+                <!-- Page - 5 -->
+                <div class="page">
+                  <div class="page-left">
+                    <img src="images/2016/2016 Donor Report YEP pages v3_pages-to-jpg-0009.jpg" />
+                  </div>
+                  <div class="page-right">
+                    <img src="images/2016/2016 Donor Report YEP pages v3_pages-to-jpg-0010.jpg" />
+                  </div>
+                </div>
+
+                <!-- Page - 6 -->
+                <div class="page">
+                  <div class="page-left">
+                    <img src="images/2016/2016 Donor Report YEP pages v3_pages-to-jpg-0011.jpg" />
+                  </div>
+                  <div class="page-right">
+                    <img src="images/2016/2016 Donor Report YEP pages v3_pages-to-jpg-0012.jpg" />
+                  </div>
+                </div>
+
+                <!-- Page - 7 -->
+                <div class="page">
+                  <div class="page-left">
+                    <img src="images/2016/2016 Donor Report YEP pages v3_pages-to-jpg-0013.jpg" />
+                  </div>
+                  <div class="page-right">
+                    <img src="images/2016/2016 Donor Report YEP pages v3_pages-to-jpg-0014.jpg" />
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <!-- Open Book END -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer relative z-10 text-white bg-black">
+        <div class="container w-full max-w-6xl px-4 pt-20 pb-6 mx-auto">
+
+            <div class="flex flex-col text-center md:flex-row md:text-left">
+
+                
+                <div class="md:mr-8 flex-1">
+                    <a href="index.html">
+                      <img class="inline-block" src="images/footer-logo.svg" />
+                    </a>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                    <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Who We Are</h6>
+
+                    <div class="links">
+                      <a href="#">Our Story</a>
+                      <a href="#">Staff and Board of Directors</a>
+                      <a href="#">News</a>
+                      <a href="#">Accountability</a>
+                      <a href="#">Our COVID-19 Response</a>
+                    </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">How it Works</h6>
+
+                  <div class="links">
+                    <a href="#">Type of Programs</a>
+                    <a href="#">Curriculm and Training Model</a>
+                    <a href="#">Program Locations and Case Studies</a>
+                    <a href="#">Partnerships</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Impacts</h6>
+
+                  <div class="links">
+                    <a href="#">Impacts and Benefits</a>
+                    <a href="#">Research and Insights</a>
+                    <a href="#">Stories</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Get Involved</h6>
+
+                  <div class="links">
+                    <a href="#">Donate</a>
+                    <a href="#">Volunteer</a>
+                    <a href="#">Corporate Engagement</a>
+                    <a href="#">Speaking Engagements</a>
+                    <a href="#">Start a YEP Program</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Events</h6>
+
+                  <div class="links">
+                    <a href="#">Soccer for Charity</a>
+                    <a href="#">Bubble Soccer for Charity</a>
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center md:justify-end text-xs leading-relaxed mt-12">
+
+              <div class="social-links flex items-center">
+                <a href="#" class="mr-6"><img src="images/icons/footer-facebook.svg" /></a>
+                <a href="#" class="mr-6"><img src="images/icons/footer-twitter.svg" /></a>
+                <a href="#" class="mr-6"><img src="images/icons/footer-linkedin.svg" /></a>
+              </div>
+
+              <p style="color: #8d8d8d;">Copyright 2020<br/>
+                Youth Empowering Parents</p>
+            </div>
+            
+        </div>
+    </footer>
+  </div>
+
+   
+</body>
+
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ 
+ <!-- Animate On Scroll -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+ <script src="js/main.js"></script> 
+
+</html>

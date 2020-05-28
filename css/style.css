@@ -357,6 +357,72 @@ body.popup-active{
     box-shadow: 0 20px 60px -2px rgba(27, 33, 58, 0.4);
 }
 
+
+/*** Open Book ***/
+.open-book{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+    min-height: 600px;
+}
+.open-book .arrow-left{
+    position: absolute;
+    top: 50%;
+    right: 101%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-image: url("../images/Icon awesome-arrow-circle-left.png");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.open-book .arrow-right{
+    position: absolute;
+    top: 50%;
+    left: 101%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-image: url("../images/Icon awesome-arrow-circle-right.png");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.open-book .pages{
+    padding: 2rem;
+}
+.open-book .pages > .page{
+    display: none;
+}
+.open-book .pages > .page.active{
+    display: flex;
+}
+.open-book .pages > .page > *{
+    width: 50%;
+    padding: 3rem;
+}
+
+/*** Tabs ***/
+.tab .tab-content{
+    display: none;
+}
+.tab .tab-content.active{
+    display: block;
+}
+.tab .tab-buttons > a{
+    font-size: 1.2rem;
+    font-family: var(--font-gibson);
+    border-bottom: 3px solid transparent;
+    padding: 0.5rem 0;
+    margin: 0 1.5rem;
+}
+.tab .tab-buttons > a.active{
+    color: var(--brand-primary);
+    border-color: var(--brand-primary);
+}
+
 /*** Footer ***/
 .footer .links a{
     display: block;
@@ -383,6 +449,17 @@ body.popup-active{
 @media only screen and (max-width: 1024px){
 
     html{font-size: 14px;}
+
+    .open-book{
+        min-height: 300px;
+        margin: 0 2rem;
+    }
+    .open-book .pages{
+        padding: 1.5rem;
+    }
+    .open-book .pages > .page > *{
+        padding: 1rem;
+    }
 }
 
 @media only screen and (max-width: 992px) and (min-width: 768px){
@@ -398,6 +475,21 @@ body.popup-active{
 
     .storyline{
         background-position: left top;
+    }
+
+    .open-book{
+        background: #fff;
+        background-image: none !important;
+    }
+    .open-book .pages > .page{
+        flex-direction: column;
+    }
+    .open-book .pages > .page > *{
+        width: 100%;
+    }
+    .open-book .pages > .page .page-left{
+        border-bottom: 1px solid #9b9b9b;
+        margin-bottom: 2rem;
     }
 }
 
@@ -436,5 +528,13 @@ body.popup-active{
 
     .storyline{
         background-image: none;
+    }
+
+    .tab.tab-accountability .tab-buttons > a{
+        margin: 0 1rem;
+    }
+
+    .open-book .pages {
+        padding: 0.5rem;
     }
 }
