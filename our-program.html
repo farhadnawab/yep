@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+  <title>YEP</title>	
+
+  <meta name="keywords" content="YEP" />
+  <meta name="description" content="YEP">
+  <meta name="author" content="https://github.com/farhadnawab">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    
+  <!-- Tailwind CSS -->
+  <link href="css/tailwind.min.css" rel="stylesheet">
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/c772f6a9db.js" crossorigin="anonymous"></script>
+
+  <!-- Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ </head>
+ <body class="not-front">
+
+  <div class="main-wrapper overflow-hidden relative">
+    
+    <!--Nav-->
+    <nav id="header" class="absolute w-full z-30 top-0 left-0">
+
+        <div class="w-full container mx-auto px-4 py-6 flex items-center">
+
+            <div data-aos="fade-right" data-aos-duration="600">
+                <a class="block logo" href="index.html">
+                    <img src="images/logo.svg" />
+                </a>
+            </div>
+
+            <div class="flex-grow flex justify-end pl-10 xl:pl-0" data-aos="fade-left" data-aos-delay="50" data-aos-duration="600">
+              <ul class="main-menu xl:flex hidden">
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Impacts</a></li>
+                <li><a href="#">Get Involved</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="donate shadow-type-2">Donate</a></li>
+              </ul>
+              <button id="nav-toggle" class="inline-block xl:hidden align-middle appearance-none focus:outline-none" type="button" onclick="openMenu()">
+                <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="w-full h-full py-20 px-5 z-50 bg-primary fixed top-0 left-0" id="nav-content">
+                <button class="absolute top-0 right-0 mr-5 mt-5" type="button" onclick="closeMenu()">
+                    <svg width="36px" height="36px" viewBox="0 0 36 36">
+                        <path d="M13.2813 11.7189L13.2813 0.780128C13.2813 0.349208 12.9319 -0.00012207 12.501 -0.00012207L12.499 -0.00012207C12.0681 -0.00012207 11.7188 0.349208 11.7188 0.780128L11.7188 11.7189L0.78025 11.7189C0.34933 11.7189 0 12.0682 0 12.4991L0 12.5011C0 12.932 0.34933 13.2814 0.78025 13.2814L11.7188 13.2814L11.7188 24.2196C11.7188 24.6505 12.0681 24.9999 12.499 24.9999L12.501 24.9999C12.9319 24.9999 13.2813 24.6505 13.2813 24.2196L13.2813 13.2814L24.2197 13.2814C24.6507 13.2814 25 12.932 25 12.5011L25 12.4991C25 12.0682 24.6507 11.7189 24.2197 11.7189L13.2813 11.7189Z" transform="matrix(0.7071066 0.7071069 -0.7071069 0.7071066 17.67773 0)" id="Combined-Shape" fill="#1A1919" fill-rule="evenodd" stroke="none"></path>
+                    </svg>
+                </button>
+
+                <ul class="list-reset flex h-full flex-col w-full max-w-2xl mx-auto text-3xl text-white font-light capitalize align-center justify-center text-center">
+                    <li class="mb-5">
+                        <a href="#">Who We Are</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">How It Works</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Impacts</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Get Involved</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Events</a>
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>                
+            </div>
+            <!-- Mobile Menu - END -->
+            
+        </div>
+    </nav>
+
+    <!-- Hero Section-->
+    <section class="hero-section relative" style="background-image: url('images/ourprogram-hero.png')">
+      
+      <div class="flex w-full container mx-auto px-4 items-center">
+
+        <div class="w-3/5 text-secondary" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="-1000">
+          <h1 class="font-bold leading-none" data-aos="fade-right" data-aos-delay="500" data-aos-offset="-1000">Program Locations<br/>
+            & Case Studies</h1>
+
+          <p class="text-lg mt-6 max-w-lg leading-normal" data-aos="fade-right" data-aos-delay="700" data-aos-offset="-1000">Our programs operate in Canada, Spain, Ethiopia, Niger and Poland</p>
+          
+          <a href="#" class="btn btn-white shadow-type-1 mt-6" data-aos="fade-right" data-aos-delay="800" data-aos-offset="-1000">Contact Us</a> 
+        </div>
+
+      </div>
+
+      <div class="hero-bottom"><img src="images/hero_bottom.png" /></div>
+
+    </section>
+
+    <!-- Section -->
+    <section class="relative" data-aos="fade-up" data-aos-duration="1000">
+      <div class="w-full container mx-auto px-4 py-24">                        
+
+        <div class="flex flex-wrap flex-row-reverse font-gibson">
+          
+          <div class="w-full md:w-1/2 mb-6 md:mb-0">
+            <img class="inline-block" src="images/ourprogram-img1.png" />
+          </div>
+
+          <div class="w-full md:w-1/2 md:pr-16">
+              
+            <h2>Our Programs</h2>
+
+            <p class="leading-relaxed mt-6 text-lg">
+              We work with partners in over 50 cities to operate programs. They take place in adult literacy centres, health centres, schools, retirement homes, shelters, refugee & immigration centres, religious institutions, and even empty rooms in sports arenas and police stations!
+              <br/><br/>
+              If you are interested in having a program in your community, send us a message and we will get back to you as soon as we can.
+            </p>
+            
+            <div class="mt-6">
+              <a href="javascript:void(0)" class="btn btn-white shadow-type-1">Contact Us</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- "Our COVID-19 response" Section -->
+    <section class="relative tab tab-program" data-aos="fade-up" data-aos-duration="1000">
+
+      <div class="flex md:flex-row-reverse flex-col md:flex-row w-full container mx-auto md:px-10"> 
+        <div class="flex flex-col md:flex-row tab-buttons justify-center md:justify-between w-full">
+          <a href="javascript:void(0)" class="active" data-target="tab-1">Toronto, Ontario</a>
+          <a href="javascript:void(0)" data-target="tab-2">North York, Ontario</a>
+          <a href="javascript:void(0)" data-target="tab-3">Barcelona, Spain</a>
+          <a href="javascript:void(0)" data-target="tab-4">Libore, Niger</a>
+        </div>
+      </div>
+      <div class="bg-tertiary">
+        <div class="w-full container mx-auto px-4 py-32">   
+          
+          <div class="tab-content active" id="tab-1">
+
+            
+            <div class="flex flex-wrap font-gibson">
+              
+              <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                <img class="inline-block" src="images/ourprogram-img2.png" />
+              </div>
+
+              <div class="w-full md:w-2/3 md:pl-16">
+
+                <p class="leading-relaxed">
+                  In 2013, Youth Empowering Parents began a program at Nelson Mandela Park Public School. At the time, this school was ranked 2nd out of 471 elementary schools in the city in terms of having the most barriers to student success. 
+                  <br/><br/>
+                  YEP worked with teachers and principals to select students who were facing the most difficulty. As described by the school’s Vice Principal: “(That student) had a lot of behavioural challenges, particularly during unstructured time – lunch and recess. He’d continuously get into conflict with students and was defiant towards teachers. He was a regular in my office. I was surprised he agreed to join the program.” 
+                  <br/><br/>
+                  One major benefit of the YEP program is that it places young people in a position of immense responsibility; they are tasked with teaching what they know to another adult or senior, and when young people are challenged to prove that they can do something, they rise to the occasion. “Since he joined, I can’t remember the last time I’ve seen him in my office. He’s changed quite a bit, and I don’t think he realizes what kind of impact the program has had on him. It allowed him to take on some leadership and demonstrate a skillset that he obviously had – one which I didn’t even know he had. It gave him a certain level of confidence, and someone looking at him for support or guidance allowed him to see himself as a leader. He enjoyed getting that positive encouragement. And, having been put into the role of a teacher, he’s become a lot more focused in class, and he’s a lot more respectful to teachers… that’s a big growth piece. I can confidently attribute much of that growth to his involvement in the YEP program.” 
+                  <br/><br/>
+                  The program continues to operate there, with English and technology training as the primary focus. 
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="tab-content" id="tab-2">
+
+            <div class="flex flex-wrap font-gibson">
+              
+              <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                <img class="inline-block" src="images/ourprogram-img3.png" />
+              </div>
+
+              <div class="w-full md:w-2/3 md:pl-16 leading-relaxed">
+
+                <p>
+                  In 2017, Youth Empowering Parents partnered with North York Community House and Blackcreek Community Health Centre to provide technology workshops to seniors. Blackcreek Community Health Centre provides seniors with services such as drop-in clinic services, weekly group exercise programs, and diabetes awareness and prevention programs. The seniors who frequented Blackcreek had requested training in technology, but there were no technology teachers available to provide this training. A groupof local high-school students were recruited by North York Community House, and YEP trained to work one-on-one with seniors. They met weekly during the school year, and seniors brought their own smartphone, tablet or laptop with them, or used one that wassupplied by the program. Since the same senior was paired with the same youth tutor every session, they formed a sense of trust and a relationship that would assist with the senior’s learning.
+                </p>
+
+                <p class="bg-fifth rounded-lg p-6 mt-3 text-sm">
+                  “I didn’t even know what a tablet was. WiFi? Touchscreen? I thought it would be hard, but these young people know everything. My tutor was so patient took her time to teach me. Now I can call my family back home on Skype. It was the first time seeing their faces after so many years!” 
+                  <br/><br/>
+                  -Drema, Adult Learner
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="tab-content" id="tab-3">
+
+            <div class="flex flex-wrap font-gibson">
+              
+              <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                <img class="inline-block" src="images/ourprogram-img4.png" />
+              </div>
+
+              <div class="w-full md:w-2/3 md:pl-16 leading-relaxed">
+
+                <p>
+                  Launched under the name AFEX – Aprenem Families en Xarxa (“Families Learning Together”) - the YEP program was started in Barcelona in 2015 in partnership with Casa Àsia, a government organization. A pilot program was run in a community which had a lot of immigrants from Pakistan, India and Bangladesh. The program offers lessons on Spanish and Catalan language and culture, technology training, and includes field trips to major cultural centres to help newcomers fully integrate into their new surroundings. Since launch, AFEX has seen more than 300 adults taking part in the program. Adult participants are from various countries including Pakistan, India, Bangladesh, China, Morocco, Turkey, Nigeria, Senegal and Ghana. Student volunteers come from local high-schools. The Government of Catalonia and Councils of Barcelona and Terrassa have extended economic support to run the program and to launch it in other areas. The program won two awards in 2018: the Frances Candel Prize in October and the Learning and Community Service Award in November.
+                </p>
+
+                <p class="bg-fifth rounded-lg p-6 mt-3 text-sm">
+                  “It is necessary to empower adults because when you feel you are important and that you have a place in the world, you feel different and you believe you can achieve things in life. This is, especially, important in a society that receives large number of immigrants.”
+                  <br/><br/>
+                  -Patricia Daniela Persky 
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="tab-content" id="tab-4">
+            
+            <div class="flex flex-wrap font-gibson">
+              
+              <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                <img class="inline-block" src="images/ourprogram-img5.png" />
+              </div>
+
+              <div class="w-full md:w-2/3 md:pl-16 leading-relaxed">
+
+                <p>
+                  In 2014 Youth Empowering Parents partnered with Pencils For Kids, an organization that provides education, training, and income-generating opportunities for children, and women in Niger, West Africa. 
+                  <br/><br/>
+                  A landlocked country in West Africa, Niger is one of the poorest nations in the world with a poverty rate of 44.1%. According to the United Nations Development Programme’s 2018 Human Development Index, it is the least developed African nation with an education rate of 2.0 years spent in school out of 5.4 expected years. Niger has an adult literacy rate of 19.1%, and its elderly literacy rate stands at 5.8%. Niger is threatened by an increasing number of security concerns due to insecurity in Libya, spill-over from the conflict in Mali, and extremism in Nigeria. It is currently hosting over 300,000 refugees and displaced persons from the three countries. 
+                  <br/><br/>
+                  The YEP program provided a unique leadership opportunity for youth, and to teach technology skills to a community of adults who did have access to such tools. YEP provided laptops, and the program ran out of a facility built by Pencils for Kids. Programs run twice a week for 75-minutes each, and uniforms provided to each student to build a work-like environment. Many adults (including local police officers!) joined in, learning basic computer and internet skills for both personal and professional use. 
+                </p>
+
+                <p class="bg-fifth rounded-lg p-6 mt-3 text-sm">
+                  “During one month, I learn more than in my past six months in a private institute. In my opinion it is because of always having the tutor. I can tell him to continue to the next thing if I understand, or to wait if I need to understand better. I have to use computers more in my work, and I am learning everything I need to know.”
+                  <br/><br/>
+                  -AbdoulAziz Mounkail, Adult Learner
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer relative z-10 text-white bg-black">
+        <div class="container w-full max-w-6xl px-4 pt-20 pb-6 mx-auto">
+
+            <div class="flex flex-col text-center md:flex-row md:text-left">
+
+                
+                <div class="md:mr-8 flex-1">
+                    <a href="index.html">
+                      <img class="inline-block" src="images/footer-logo.svg" />
+                    </a>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                    <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Who We Are</h6>
+
+                    <div class="links">
+                      <a href="#">Our Story</a>
+                      <a href="#">Staff and Board of Directors</a>
+                      <a href="#">News</a>
+                      <a href="#">Accountability</a>
+                      <a href="#">Our COVID-19 Response</a>
+                    </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">How it Works</h6>
+
+                  <div class="links">
+                    <a href="#">Type of Programs</a>
+                    <a href="#">Curriculm and Training Model</a>
+                    <a href="#">Program Locations and Case Studies</a>
+                    <a href="#">Partnerships</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Impacts</h6>
+
+                  <div class="links">
+                    <a href="#">Impacts and Benefits</a>
+                    <a href="#">Research and Insights</a>
+                    <a href="#">Stories</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Get Involved</h6>
+
+                  <div class="links">
+                    <a href="#">Donate</a>
+                    <a href="#">Volunteer</a>
+                    <a href="#">Corporate Engagement</a>
+                    <a href="#">Speaking Engagements</a>
+                    <a href="#">Start a YEP Program</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Events</h6>
+
+                  <div class="links">
+                    <a href="#">Soccer for Charity</a>
+                    <a href="#">Bubble Soccer for Charity</a>
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center md:justify-end text-xs leading-relaxed mt-12">
+
+              <div class="social-links flex items-center">
+                <a href="#" class="mr-6"><img src="images/icons/footer-facebook.svg" /></a>
+                <a href="#" class="mr-6"><img src="images/icons/footer-twitter.svg" /></a>
+                <a href="#" class="mr-6"><img src="images/icons/footer-linkedin.svg" /></a>
+              </div>
+
+              <p style="color: #8d8d8d;">Copyright 2020<br/>
+                Youth Empowering Parents</p>
+            </div>
+            
+        </div>
+    </footer>
+  </div>
+
+   
+</body>
+
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ 
+ <!-- Animate On Scroll -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+ <script src="js/main.js"></script> 
+
+</html>

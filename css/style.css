@@ -35,6 +35,7 @@
     --brand-secondary: #000A3B;
     --brand-tertiary: #F8F9FF;
     --brand-fourth: #E5E5E5;
+    --brand-fifth: #EFF1FD;
 }
 
 img{max-width: 100%;}
@@ -99,6 +100,9 @@ h6{
 .text-fourth{
     color: var(--brand-fourth);
 }
+.text-fourth{
+    color: var(--brand-fifth);
+}
 
 .bg-primary{
     background: var(--brand-primary);
@@ -111,6 +115,9 @@ h6{
 }
 .bg-fourth{
     background: var(--brand-fourth);
+}
+.bg-fifth{
+    background: var(--brand-fifth);
 }
 
 .hover-scale-in{
@@ -177,6 +184,14 @@ h6{
 }
 .btn-fourth:hover{
     background-color: var(--brand-secondary);
+    color: #fff;
+}
+.btn-white{
+    background-color: #fff;
+    color: var(--brand-primary);
+}
+.btn-white:hover{
+    background-color: var(--brand-primary);
     color: #fff;
 }
 
@@ -490,6 +505,10 @@ body.popup-active{
     .open-book .pages > .page .page-left{
         border-bottom: 1px solid #9b9b9b;
         margin-bottom: 2rem;
+    }
+
+    .tab.tab-program .tab-buttons > a{
+        margin-bottom: 1rem;
     }
 }
 
