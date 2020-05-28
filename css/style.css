@@ -159,6 +159,10 @@ h6{
 .btn.rounded{
     border-radius: 20px;
 }
+.btn-sm{
+    font-size: 0.9rem;
+    min-width: 0;
+}
 .btn:hover{
     background-color: var(--brand-tertiary);
 }
@@ -266,7 +270,14 @@ ul.main-menu > li a:hover{
 .not-front .hero-bottom img{
     margin: 0 auto;
 }
-
+.hero-section.recent-news{
+    padding-top: 12rem;
+}
+.hero-section.recent-news,
+.hero-section.recent-news .container{
+    max-height: none;
+    height: auto;
+}
 
 /*** Homepage Map ***/
 .homepage-map{
@@ -438,6 +449,14 @@ body.popup-active{
     border-color: var(--brand-primary);
 }
 
+/*** Recent News ***/
+.recent-news-title-min-h{
+    min-height: 85px;
+}
+.recent-news-description-min-h{
+    min-height: 100px;
+}
+
 /*** Footer ***/
 .footer .links a{
     display: block;
@@ -509,6 +528,11 @@ body.popup-active{
 
     .tab.tab-program .tab-buttons > a{
         margin-bottom: 1rem;
+    }
+
+    .recent-news-title-min-h,
+    .recent-news-description-min-h{
+        min-height: 0;
     }
 }
 
