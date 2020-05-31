@@ -457,6 +457,24 @@ body.popup-active{
     min-height: 100px;
 }
 
+/*** Full width Video ***/
+.full-width-video{
+    position: relative;
+    overflow: hidden;
+}
+.full-width-video .overlay{
+    background:rgba(51, 51, 51, 0.55);
+    color: #fff;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 460px;
+    width: 50%;
+    line-height: 1.7;
+}
+
 /*** Footer ***/
 .footer .links a{
     display: block;
@@ -538,6 +556,12 @@ body.popup-active{
 
 @media only screen and (max-width: 640px){
 
+    .full-width-video .overlay{
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        background: rgba(51, 51, 51, 1);
+    }
 }
 
 @media only screen and (max-width: 480px){
