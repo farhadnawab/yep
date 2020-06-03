@@ -60,3 +60,36 @@ $(document).on('click', '.tab .tab-buttons > a', function(e) {// open popup
     $activeElem.addClass("active");
   }
 });
+
+
+/*** Zoom image ***/
+var scaleImage = "1.8";
+
+if(window.matchMedia("(max-width: 1280px)").matches)
+  scaleImage = "2.3";
+if(window.matchMedia("(max-width: 1024px)").matches)
+  scaleImage = "2.8";
+if(window.matchMedia("(max-width: 768px)").matches)
+  scaleImage = "2.3";
+if(window.matchMedia("(max-width: 480px)").matches)
+  scaleImage = "2.8";
+
+$('.zoom-image')
+// tile mouse actions
+.on('mouseover', function(){
+  $(this).children('.photo').css({'transform': 'scale('+ scaleImage +')'});
+})
+.on('mouseout', function(){
+  $(this).children('.photo').css({'transform': 'scale(1)'});
+})
+.on('mousemove', function(e){
+  $(this).children('.photo').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
+})
+// tiles set up
+.each(function(){
+  $(this)
+    // add a photo container
+    .append('<div class="photo"></div>');
+    // set up a background image for each tile based on data-image attribute
+    $(this).find('.photo').css('background-image', 'url("' + $(this).find("img").attr("src") + '")');
+})
