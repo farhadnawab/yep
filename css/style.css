@@ -389,12 +389,27 @@ body.popup-active{
 }
 .popup .popup-content {
     background: #fff;
-    overflow: hidden;
+    position: relative;
     max-width: 1000px;
     width: 90%;
     margin: auto;
     border-radius: 3px;
     box-shadow: 0 20px 60px -2px rgba(27, 33, 58, 0.4);
+}
+.popup .popup-content:before {
+    content: "x";
+    position: absolute;
+    bottom: 99.8%;
+    left: 99%;
+    width: 24px;
+    height: 24px;
+    line-height: 23px;
+    text-align: center;
+    background: #fff;
+    display: block;
+    border-radius: 100%;
+    font-weight: bold;
+    pointer-events: none;
 }
 
 

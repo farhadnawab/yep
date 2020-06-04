@@ -204,7 +204,7 @@
 
         <!-- VIDEO Section -->
         <div class="full-width-video mt-20">
-          <img class="w-full" src="images/video-thumb.png" />
+          <a href="javascript:void(0)" data-popup-video="popup-video" data-video-url="https://www.youtube.com/embed/L3V21fgix_g?autoplay=1"><img class="w-full" src="images/video-thumb.png" /></a>
 
           <div class="overlay font-gibson" data-aos="fade-right" data-aos-duration="1000">
             On Friday, September 27th, 2019, Daniels Corporation hosted Play it Forward, a soccer tournament in support of Youth Empowering Parents. This half-day soccer tournament brought together organizations involved in architecture and trades, and raised money to create meaningful leadership opportunities for more than 150 at-risk children and youth.
@@ -393,7 +393,25 @@
     </footer>
   </div>
 
-   
+  <!-- POPUPS -->
+
+  <div class="popup-overlay">
+
+    <!-- POPUP 1 -->
+    <div class="popup" id="popup-video">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="responsive-video"><iframe class="w-full" src=""></iframe></div>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 1 END -->
+
+  </div>
+  <!-- POPUP END -->
+
 </body>
 
  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
