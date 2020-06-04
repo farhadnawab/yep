@@ -120,14 +120,16 @@
             <div class="shadow-type-1 p-10 min-h-full">
               <h2 class="font-bold mb-2">Have a question?</h2>
               <p class="text-xl mb-10">Send us a message, someone will be in touch.</p>
+              
+              <form method="post" action="mail/mail.php">
+                <input type="text" name="your_name" placeholder="Your name*" class="form-control mb-4" required />
 
-              <input type="text" placeholder="Your name*" class="form-control mb-4" />
+                <input type="text" name="your_email" placeholder="Your email*" class="form-control mb-4" required />
 
-              <input type="text" placeholder="Your email*" class="form-control mb-4" />
+                <textarea name="your_message" placeholder="Type a message here…" rows="10" class="form-control mb-4" required></textarea>
 
-              <textarea placeholder="Type a message here…" rows="10" class="form-control mb-4"></textarea>
-
-              <button type="button" class="btn btn-primary rounded shadow-md">Send</button>
+                <button type="submit" class="btn btn-primary rounded shadow-md">Send</button>
+              </form>
             </div>
           </div>
           <div class="w-full md:w-2/6 p-3">
