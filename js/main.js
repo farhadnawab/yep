@@ -26,6 +26,7 @@ $(document).on('click', '.popup', function(e) {// close popup
   if(e.target.id == popupActiveId){//if clicked outside content area
       $("body").removeClass("popup-active");
       $(".popup").removeClass("active");
+      $("#"+ popupActiveId).find(".responsive-video iframe").attr("src","");
   }
 });
 
@@ -41,13 +42,17 @@ $(document).on('click', '[data-popup-image]', function(e) {// open popup
     $popup.find("img").attr("src", imageUrl);
   }
 });
-$(document).on('click', '.popup', function(e) {// close popup
 
-  popupActiveId = $(".popup.active").attr("id");
-  
-  if(e.target.id == popupActiveId){//if clicked outside content area
-      $("body").removeClass("popup-active");
-      $(".popup").removeClass("active");
+/*** POPUP Video ****/
+$(document).on('click', '[data-popup-video]', function(e) {// open popup
+  $popup = $("#"+ $(this).attr("data-popup-video"));
+
+  if($popup.length > 0){
+    var imageUrl = $(this).attr("data-video-url");
+
+    $("body").addClass("popup-active");
+    $popup.addClass("active");
+    $popup.find("iframe").attr("src", imageUrl);
   }
 });
 

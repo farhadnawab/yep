@@ -115,7 +115,7 @@
 
     <!-- Section -->
     <section class="relative" data-aos="fade-up" data-aos-duration="1000">
-      <div class="w-full container mx-auto px-4 py-24">                        
+      <div class="w-full container mx-auto px-4 pt-24 lg:pb-24">                        
 
         <h2>Young people teach a variety of skills they have.</h2>
 
@@ -222,9 +222,9 @@
           <a href="javascript:void(0)" class="inline-block btn btn-primary mt-16">Learn More</a>
         </div>
 
-        <!-- Video -->
+        <!-- Video https://www.youtube.com/watch?v=GW0zykQCl1M -->
         <div class="w-full max-w-5xl mx-auto">
-          <img class="mt-16" src="images/youtube-thumb.png" />
+          <a href="javascript:void(0)" data-popup-video="popup-video" data-video-url="https://www.youtube.com/embed/GW0zykQCl1M?autoplay=1"><img class="mt-16" src="images/youtube-thumb.png" /></a>
         </div>
 
         <!-- "4 items" Section --> 
@@ -324,7 +324,11 @@
 
         <h3 class="max-w-4xl leading-normal">Our award-winning training program and curriculum has been designed by industry experts, so that even young people as early as 9 years old can become effective 1-on-1 tutors.</h3>
 
-        <img class="mt-20" src="images/comic.png" />
+        <div class="flex flex-wrap -mx-3">
+          <img class="w-full md:w-1/3 mt-20 px-3" src="images/comic01.png" />
+          <img class="w-full md:w-1/3 mt-20 px-3" src="images/comic02.png" />
+          <img class="w-full md:w-1/3 mt-20 px-3" src="images/comic03.png" />
+        </div>
       </div>
     </section>
 
@@ -456,6 +460,26 @@
         </div>
     </footer>
   </div>
+
+
+  <!-- POPUPS -->
+
+  <div class="popup-overlay">
+
+    <!-- POPUP 1 -->
+    <div class="popup" id="popup-video">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="responsive-video"><iframe class="w-full" src=""></iframe></div>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 1 END -->
+
+  </div>
+  <!-- POPUP END -->
 
    
 </body>
