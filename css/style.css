@@ -218,6 +218,7 @@ ul.main-menu{
 }
 ul.main-menu > li{
     margin-left: 0.8rem;
+    position: relative;
 }
 ul.main-menu > li a{
     display: block;
@@ -234,8 +235,27 @@ ul.main-menu > li a.donate{
     -moz-box-shadow: 0px 3px 14px rgba(217, 220, 248);
     box-shadow: 0px 3px 14px rgba(217, 220, 248);
 }
-ul.main-menu > li a:hover{
+ul.main-menu li:hover > a,
+ul.main-menu li a:hover{
     color: var(--brand-primary);
+}
+ul.main-menu ul {
+    display: none;
+    background: #fff;
+    min-width: 280px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+ul.main-menu li:hover > ul{
+    display: block;
+}
+ul.main-menu ul li {
+    border-bottom: 1px solid #eee;
+}
+ul.main-menu ul li a{
+    font-size: 0.9rem;
+    font-weight: normal;
 }
 
 /*** Mobile Menu ****/
@@ -255,6 +275,20 @@ ul.main-menu > li a:hover{
 }
 #nav-content ul li a:hover{
     color: var(--brand-secondary);
+}
+ul.main-menu-mobile {
+    overflow: auto;
+    padding: 1rem 0;
+}
+ul.main-menu-mobile ul{
+    margin-bottom: 1rem;
+}
+ul.main-menu-mobile ul li a{
+    font-size: 0.6em;
+}
+ul.main-menu-mobile ul li a:before{
+    content: "-";
+    margin-right: 5px;
 }
 
 
