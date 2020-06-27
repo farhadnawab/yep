@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+  <title>YEP</title>	
+
+  <meta name="keywords" content="YEP" />
+  <meta name="description" content="YEP">
+  <meta name="author" content="https://github.com/farhadnawab">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    
+  <!-- Tailwind CSS -->
+  <link href="css/tailwind.min.css" rel="stylesheet">
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/c772f6a9db.js" crossorigin="anonymous"></script>
+
+  <!-- Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ </head>
+ <body class="not-front">
+
+  <div class="main-wrapper overflow-hidden relative">
+    
+    <!--Nav-->
+    <nav id="header" class="absolute w-full z-30 top-0 left-0">
+
+        <div class="w-full container mx-auto px-4 py-6 flex items-center">
+
+            <div data-aos="fade-right" data-aos-duration="600">
+                <a class="block logo" href="index.html">
+                    <img src="images/logo.svg" />
+                </a>
+            </div>
+
+            <div class="flex-grow flex justify-end pl-10 xl:pl-0" data-aos="fade-left" data-aos-delay="50" data-aos-duration="600">
+              <ul class="main-menu xl:flex hidden">
+                <li><a href="#">Who We Are</a>
+                  <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Staff and Board of Directors</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Accountability</a></li>
+                    <li><a href="#">Our Covid-19 Response</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">How It Works</a>
+                  <ul>
+                    <li><a href="#">Type of Programs</a></li>
+                    <li><a href="#">Curriculm and Training Model</a></li>
+                    <li><a href="#">Program Locations and Case Studies</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Impacts</a>
+                  <ul>
+                    <li><a href="#">Impacts and Benefits</a></li>
+                    <li><a href="#">Research and Insights</a></li>
+                    <li><a href="#">Stories</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Get Involved</a>
+                  <ul>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">Corporate Engagement</a></li>
+                    <li><a href="#">Speaking Engagements</a></li>
+                    <li><a href="#">Start a YEP Program</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Events</a>
+                  <ul>
+                    <li><a href="#">Soccer for Charity</a></li>
+                    <li><a href="#">Bubble Soccer for Charity</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="donate shadow-type-2">Donate</a></li>
+              </ul>
+              <button id="nav-toggle" class="inline-block xl:hidden align-middle appearance-none focus:outline-none" type="button" onclick="openMenu()">
+                <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="w-full h-full py-20 px-5 z-50 bg-primary fixed top-0 left-0" id="nav-content">
+                <button class="absolute top-0 right-0 mr-5 mt-5" type="button" onclick="closeMenu()">
+                    <svg width="36px" height="36px" viewBox="0 0 36 36">
+                        <path d="M13.2813 11.7189L13.2813 0.780128C13.2813 0.349208 12.9319 -0.00012207 12.501 -0.00012207L12.499 -0.00012207C12.0681 -0.00012207 11.7188 0.349208 11.7188 0.780128L11.7188 11.7189L0.78025 11.7189C0.34933 11.7189 0 12.0682 0 12.4991L0 12.5011C0 12.932 0.34933 13.2814 0.78025 13.2814L11.7188 13.2814L11.7188 24.2196C11.7188 24.6505 12.0681 24.9999 12.499 24.9999L12.501 24.9999C12.9319 24.9999 13.2813 24.6505 13.2813 24.2196L13.2813 13.2814L24.2197 13.2814C24.6507 13.2814 25 12.932 25 12.5011L25 12.4991C25 12.0682 24.6507 11.7189 24.2197 11.7189L13.2813 11.7189Z" transform="matrix(0.7071066 0.7071069 -0.7071069 0.7071066 17.67773 0)" id="Combined-Shape" fill="#1A1919" fill-rule="evenodd" stroke="none"></path>
+                    </svg>
+                </button>
+
+                <ul class="main-menu-mobile list-reset flex h-full flex-col w-full max-w-2xl mx-auto text-3xl text-white font-light capitalize">
+                    <li class="mb-5">
+                        <a href="#">Who We Are</a>
+                  <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Staff and Board of Directors</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Accountability</a></li>
+                    <li><a href="#">Our Covid-19 Response</a></li>
+                  </ul>
+                
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">How It Works</a>
+                  <ul>
+                    <li><a href="#">Type of Programs</a></li>
+                    <li><a href="#">Curriculm and Training Model</a></li>
+                    <li><a href="#">Program Locations and Case Studies</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                  </ul>
+                
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Impacts</a>
+                  <ul>
+                    <li><a href="#">Impacts and Benefits</a></li>
+                    <li><a href="#">Research and Insights</a></li>
+                    <li><a href="#">Stories</a></li>
+                  </ul>
+                
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Get Involved</a>
+                  <ul>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">Corporate Engagement</a></li>
+                    <li><a href="#">Speaking Engagements</a></li>
+                    <li><a href="#">Start a YEP Program</a></li>
+                  </ul>
+                
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Events</a>
+                  <ul>
+                    <li><a href="#">Soccer for Charity</a></li>
+                    <li><a href="#">Bubble Soccer for Charity</a></li>
+                  </ul>
+                
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>                
+            </div>
+            <!-- Mobile Menu - END -->
+            
+        </div>
+    </nav>
+
+    <!-- Hero Section-->
+    <section class="hero-section relative" style="background-image: url('images/tutortraining-hero.png')">
+      
+      <div class="flex w-full container mx-auto px-4 items-center">
+
+        <div class="w-3/5 text-secondary" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="-1000">
+          <h1 class="font-bold leading-none" data-aos="fade-right" data-aos-delay="500" data-aos-offset="-1000">The Tutor Training Hub</h1>
+
+          <p class="text-lg mt-6 max-w-lg leading-normal" data-aos="fade-right" data-aos-delay="700" data-aos-offset="-1000">Here, you'll learn how to become a good tutor to a parent or another family member at home</p>
+          
+        </div>
+
+      </div>
+
+      <div class="hero-bottom"><img src="images/hero_bottom.png" /></div>
+    </section>
+
+    <div id="quiz-wrapper" class="flex animate-translate mb-16">
+
+      <!-- "How it Works" Section -->
+      <section class="flex-none w-screen relative" data-aos="fade-up" data-aos-duration="1000">
+        <div class="w-full container mx-auto px-4 py-16 text-center">                        
+
+          <h2 class="leading-tight md:mb-24 mb-16 font-bold text-secondary">Here's how it works</h2>
+
+          <div class="flex flex-wrap">
+            
+            <div class="w-full max-w-sm md:max-w-full md:w-1/3 px-2 mx-auto" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
+              
+              <img class="inline-block" src="images/history2.png" />
+
+              <h4 class="text-secondary font-bold mt-5">First, you'll learn how to<br/> become a tutor</h4>
+
+              <p class="leading-normal mt-5">It only takes about 15 minutes to learn the basics</p>
+
+            </div>
+
+            <div class="w-full max-w-sm md:max-w-full md:w-1/3 px-2 mt-20 md:mt-0 mx-auto" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
+              <img class="inline-block mt-3" src="images/homepage-young-1.svg" />
+
+              <h4 class="text-secondary font-bold mt-5">Then, you'll join a short<br/> online discussion</h4>
+
+              <p class="leading-normal mt-5">You'll tell us what you'd like to teach, and you'll get tips and tricks to help you teach</p>
+
+            </div>
+
+            <div class="w-full max-w-sm md:max-w-full md:w-1/3 px-2 mt-20 md:mt-0 mx-auto" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="800">
+              <img class="inline-block" src="images/homepage-young-2.svg" />
+
+              <h4 class="text-secondary font-bold mt-5">Then, you'll teach a parent<br/> or an adult you know</h4>
+
+              <p class="leading-normal mt-5">Check in with us weekly to tell us what you've done, so we can track your volunteer hours</p>
+            </div>
+
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="md:mt-24 mt-16 mb-16">
+              <a href="javascript:void(0)" class="slide-next btn btn-primary">Get Started</a>
+            </div>
+
+            <p class="leading-normal">If you've already done the training exercises, click here to register for an online discussion</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- "Welcome" Section -->
+      <section class="flex-none w-screen relative h-0">
+        <div class="w-full container max-w-5xl mx-auto px-4 py-16">                        
+
+          <h2 class="leading-tight md:mb-24 mb-16 font-bold text-secondary text-center">
+            Welcome!<br/>
+            Here's a quick introduction before you start
+          </h2>
+
+          <div class="flex flex-wrap items-end">
+
+            <div class="w-full md:w-2/5 md:pb-20">
+              <img class="inline-block" src="images/tutortraining-img1.svg" />
+            </div>
+            <div class="w-full md:w-3/5 mt-10 md:mt-0 md:pl-10 lg:pl-20">            
+              <p class="leading-normal">
+                We've got a couple of short videos and quizzes that will help you learn the basics of becoming a tutor. The examples you'll see and read about will show a demonstration of a student attempting to teach computer skills to an adult. However, the things you'll learn are applicable no matter what you teach. You can use these teaching skill whether you teach English language skills, dance moves, a musical instrument, or just about anything else you're good at.
+                <br/><br/>
+                You can't save your progress, but it will only take you about 15 minutes to complete.
+              </p>
+
+              <a href="javascript:void(0)" class="slide-next btn btn-primary mt-10">Next page</a>
+
+              
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- "Let's watch a video" Section -->
+      <section class="flex-none w-screen relative h-0">
+        <div class="w-full container max-w-5xl mx-auto px-4 py-16 text-center">                        
+
+          <h2 class="leading-tight md:mb-24 mb-16 font-bold text-secondary">
+            First, let's watch a short video
+          </h2>
+
+          <div class="responsive-video"><iframe class="w-full" src="https://www.youtube.com/embed/yNpmQP0f7aI"></iframe></div>
+
+          <a href="javascript:void(0)" class="slide-next btn btn-primary mt-16">Next page</a>
+
+        </div>
+      </section>
+
+      <!-- "Question 1" Section -->
+      <section class="flex-none w-screen relative h-0">
+        <div class="w-full container max-w-5xl mx-auto px-4 py-16 text-center">                        
+
+          <h2 class="leading-tight md:mb-24 mb-16 font-bold text-secondary">
+            Let's do a quiz. What is the best way to<br/> respond in this scenarios?
+          </h2>
+
+          <div class="flex flex-wrap">
+
+            <div class="w-full md:w-1/2 px-5">
+              <img class="inline-block" src="images/quiz1-a.png" />
+
+              <button type="button" class="slide-next is-correct btn btn-primary no-hover mt-8 md:mt-16">This way</button>
+            </div>
+            <div class="w-full md:w-1/2 mt-10 md:mt-0 px-5">            
+              <img class="inline-block" src="images/quiz1-b.png" />
+
+              <button type="button" class="slide-next is-wrong btn btn-primary no-hover mt-8 md:mt-16">This way</button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- "Question 2" Section -->
+      <section class="flex-none w-screen relative h-0">
+        <div class="w-full container max-w-5xl mx-auto px-4 py-16 text-center">                        
+
+          <h2 class="leading-tight md:mb-24 mb-16 font-bold text-secondary">
+            Let's do a quiz. What is the best way to<br/> respond in this scenarios?
+          </h2>
+
+          <div class="flex flex-wrap">
+
+            <div class="w-full md:w-1/2 px-5">
+              <img class="inline-block" src="images/quiz2-a.png" />
+
+              <button type="button" class="slide-next is-wrong btn btn-primary no-hover mt-8 md:mt-16">This way</button>
+            </div>
+            <div class="w-full md:w-1/2 mt-10 md:mt-0 px-5">            
+              <img class="inline-block" src="images/quiz2-b.png" />
+
+              <button type="button" class="slide-next is-correct btn btn-primary no-hover mt-8 md:mt-16">This way</button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- "Question 3" Section -->
+      <section class="flex-none w-screen relative h-0">
+        <div class="w-full container max-w-5xl mx-auto px-4 py-16 text-center">                        
+
+          <h2 class="le ading-tight md:mb-24 mb-16 font-bold text-secondary">
+            Let's do a quiz. What is the best way to<br/> respond in this scenarios?
+          </h2>
+
+          <div class="flex flex-wrap">
+
+            <div class="w-full md:w-1/2 px-5">
+              <img class="inline-block" src="images/quiz3-a.png" />
+
+              <button type="button" class="slide-next is-correct btn btn-primary no-hover mt-8 md:mt-16">This way</button>
+            </div>
+            <div class="w-full md:w-1/2 mt-10 md:mt-0 px-5">            
+              <img class="inline-block" src="images/quiz3-b.png" />
+
+              <button type="button" class="slide-next is-wrong btn btn-primary no-hover mt-8 md:mt-16">This way</button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- "Question 4" Section -->
+      <section class="flex-none w-screen relative h-0">
+        <div class="w-full container max-w-5xl mx-auto px-4 py-16 text-center">                        
+
+          <h2 class="le ading-tight md:mb-24 mb-16 font-bold text-secondary">
+            Let's do a quiz. What is the best way to<br/> respond in this scenarios?
+          </h2>
+
+          <div class="flex flex-wrap">
+
+            <div class="w-full md:w-1/2 px-5">
+              <img class="inline-block" src="images/quiz4-a.png" />
+
+              <button type="button" class="slide-next is-wrong btn btn-primary no-hover mt-8 md:mt-16">This way</button>
+            </div>
+            <div class="w-full md:w-1/2 mt-10 md:mt-0 px-5">            
+              <img class="inline-block" src="images/quiz4-b.png" />
+
+              <button type="button" class="slide-next is-correct btn btn-primary no-hover mt-8 md:mt-16">This way</button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- "Question 5" Section -->
+      <section class="flex-none w-screen relative h-0">
+        <div class="w-full container max-w-5xl mx-auto px-4 py-16 text-center">                        
+
+          <h2 class="le ading-tight md:mb-24 mb-16 font-bold text-secondary">
+            Let's do a quiz. What is the best way to<br/> respond in this scenarios?
+          </h2>
+
+          <div class="flex flex-wrap">
+
+            <div class="w-full md:w-1/2 px-5">
+              <img class="inline-block" src="images/quiz5-a.png" />
+
+              <button type="button" class="slide-next is-correct btn btn-primary no-hover mt-8 md:mt-16">This way</button>
+            </div>
+            <div class="w-full md:w-1/2 mt-10 md:mt-0 px-5">            
+              <img class="inline-block" src="images/quiz5-b.png" />
+
+              <button type="button" class="slide-next is-wrong btn btn-primary no-hover mt-8 md:mt-16">This way</button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- "Question 6" Section -->
+      <section class="flex-none w-screen relative h-0">
+        <div class="w-full container max-w-5xl mx-auto px-4 py-16 text-center">                        
+
+          <h2 class="le ading-tight md:mb-24 mb-16 font-bold text-secondary">
+            Let's do a quiz. What is the best way to<br/> respond in this scenarios?
+          </h2>
+
+          <div class="flex flex-wrap">
+
+            <div class="w-full md:w-1/2 px-5">
+              <img class="inline-block" src="images/quiz6-a.png" />
+
+              <button type="button" class="slide-next is-wrong btn btn-primary no-hover mt-8 md:mt-16">This way</button>
+            </div>
+            <div class="w-full md:w-1/2 mt-10 md:mt-0 px-5">            
+              <img class="inline-block" src="images/quiz6-b.png" />
+
+              <button type="button" class="slide-next is-correct btn btn-primary no-hover mt-8 md:mt-16">This way</button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- "Question 7" Section -->
+      <section class="flex-none w-screen relative h-0">
+        <div class="w-full container max-w-5xl mx-auto px-4 py-16 text-center">                        
+
+          <h2 class="le ading-tight md:mb-24 mb-16 font-bold text-secondary">
+            Let's do a quiz. What is the best way to<br/> respond in this scenarios?
+          </h2>
+
+          <div class="flex flex-wrap">
+
+            <div class="w-full md:w-1/2 px-5">
+              <img class="inline-block" src="images/quiz7-a.png" />
+
+              <button type="button" class="slide-next is-wrong btn btn-primary no-hover mt-8 md:mt-16">This way</button>
+            </div>
+            <div class="w-full md:w-1/2 mt-10 md:mt-0 px-5">            
+              <img class="inline-block" src="images/quiz7-b.png" />
+
+              <button type="button" class="slide-next is-correct btn btn-primary no-hover mt-8 md:mt-16">This way</button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- "Let's recap" Section -->
+      <section class="flex-none w-screen relative h-0">
+        <div class="w-full container max-w-5xl mx-auto px-4 py-16 text-center">                        
+
+          <h2 class="leading-tight md:mb-24 mb-16 font-bold text-secondary">
+            Let's recap. Here are 7 things to keep in mind<br/> when tutoring
+          </h2>
+
+          <div class="responsive-video"><iframe class="w-full" src="https://www.youtube.com/embed/yNpmQP0f7aI"></iframe></div>
+
+          <a href="javascript:void(0)" class="slide-next btn btn-primary mt-16">Next page</a>
+
+        </div>
+      </section>
+
+      <!-- "You Have got skills" Section -->
+      <section class="flex-none w-screen relative h-0">
+        <div class="w-full container max-w-4xl mx-auto px-4 py-16 text-center">                        
+
+          <h2 class="leading-tight font-bold text-secondary">
+            You've got a lot of skills.<br/>
+            What do you want to teach?
+          </h2>
+
+          <div class="flex flex-wrap text-center my-16 md:my-24">
+
+            <!-- 1st Row -->
+            <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+              <div class="flex-grow flex items-center justify-center mb-3">
+                <img class="inline-block" src="images/program-img1.png" />
+              </div>
+  
+              <p class="h-10">English as a second language</p>
+            </div>
+            <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+  
+              <div class="flex-grow flex items-center justify-center mb-3">
+                <img class="inline-block mb-5" src="images/program-img4.png" />
+              </div>
+  
+              <p class="h-10">Computer / Smart-
+                phone skills</p>
+            </div>
+            <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+  
+              <div class="flex-grow flex items-center justify-center mb-3">
+                <img class="inline-block" src="images/program-img2.png" />
+              </div>
+  
+              <p class="h-10">Dance</p>
+            </div>
+            <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+  
+              <div class="flex-grow flex items-center justify-center mb-3">
+                <img class="inline-block mb-5" src="images/program-img9.png" />
+              </div>
+  
+              <p class="h-10">A musical instrument</p>
+            </div>
+            <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+  
+              <div class="flex-grow flex items-center justify-center mb-3">
+                <img class="inline-block mb-5" src="images/program-img5.png" />
+              </div>
+  
+              <p class="h-10">Basic Financial literacy</p>
+            </div>
+  
+            <!-- 2nd Row -->
+            <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+  
+              <div class="flex-grow flex items-center justify-center mb-3">
+                <img class="inline-block mb-5" style="max-width: 100px;" src="images/history1.png" />
+              </div>
+  
+              <p class="h-10">A game</p>
+            </div>
+            <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+  
+              <div class="flex-grow flex items-center justify-center mb-3">
+                <img class="inline-block mb-5" src="images/program-img3.png" />
+              </div>
+  
+              <p class="h-10">Environmental literacy</p>
+            </div>
+            <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+  
+              <div class="flex-grow flex items-center justify-center mb-3">
+                <img class="inline-block mb-5" src="images/program-img10.png" />
+              </div>
+  
+              <p class="h-10">physical exercise</p>
+            </div>
+            <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+  
+              <div class="flex-grow flex items-center justify-center mb-3">
+                <img class="inline-block mb-5" style="max-width: 150px;" src="images/history12.png" />
+              </div>
+  
+              <p class="h-10">Drawing / Painting</p>
+            </div>
+            <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+  
+              <div class="flex-grow flex items-center justify-center mb-3">
+                <img class="inline-block mb-5" src="images/history6.png" />
+              </div>
+  
+              <p class="h-10">Something else?</p>
+            </div>
+  
+          </div>
+
+          <h2 class="leading-tight font-medium md:mb-0 mb-8">
+            Now you'll need to join one of our online discussions. Tell us what you want to teach, and share teaching ideas with other soon-to-be tutors
+          </h2>
+
+          <div class="flex flex-wrap md:flex-no-wrap items-center justify-center max-w-3xl mx-auto">
+
+            <div class="w-full md:w-auto px-5">
+              <img class="inline-block" src="images/quiz-page-img1.png" />
+            </div>
+            <div class="w-full md:w-auto mt-10 md:mt-0 px-5">        
+
+              <a href="javascript:void(0)" target="_blank" class="btn btn-primary mt-8 md:mt-16 whitespace-no-wrap">Join an online discussion</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer relative z-10 text-white bg-black">
+        <div class="container w-full max-w-6xl px-4 py-12 mx-auto">
+
+            <div class="flex flex-col text-center md:flex-row md:text-left">
+
+                <div class="md:mr-8 flex-1">
+                    <a href="index.html">
+                      <img class="inline-block" src="images/footer-logo.svg" />
+                    </a>
+                </div>
+
+                <div class="flex-1">
+                  <div class="flex justify-center md:justify-end text-xs leading-relaxed">
+
+                    <div class="social-links flex items-center">
+                      <a href="#" class="mr-6"><img src="images/icons/footer-facebook.svg" /></a>
+                      <a href="#" class="mr-6"><img src="images/icons/footer-twitter.svg" /></a>
+                      <a href="#" class="mr-6"><img src="images/icons/footer-linkedin.svg" /></a>
+                    </div>
+      
+                    <p style="color: #8d8d8d;">Copyright 2020<br/>
+                      Youth Empowering Parents</p>
+                  </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+  </div>
+
+  <!-- POPUPS -->
+
+  <div class="popup-overlay">
+
+    <!-- POPUP 1 -->
+    <div class="popup" id="popup-video">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="responsive-video"><iframe class="w-full" src=""></iframe></div>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 1 END -->
+
+  </div>
+  <!-- POPUP END -->
+   
+</body>
+
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ 
+ <!-- Animate On Scroll -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+ <script src="js/main.js"></script> 
+
+</html>

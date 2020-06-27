@@ -122,3 +122,58 @@ $('.zoom-image')
     // set up a background image for each tile based on data-image attribute
     $(this).find('.photo').css('background-image', 'url("' + $(this).find("img").attr("src") + '")');
 })
+
+
+/**** Quiz Working ****/
+var slideOffset = 0;
+$(document).on("click",".slide-next", function(){
+  
+  if($(this).hasClass("is-correct")){
+    
+    $(this).text("That's right!");    
+
+    setTimeout(() => {
+      
+      if($(this).closest("section").next().length > 0)
+      {
+        //Take height of the current section
+        $(this).closest("section").addClass("h-0");
+        $(this).closest("section").next().removeClass("h-0");
+
+        //Scroll to top of the current section
+        $("html, body").animate({
+          scrollTop: $(this).closest("section").next().offset().top
+        }, 50);
+        
+        slideOffset += $(this).closest("section").next().outerWidth();
+
+        $("#quiz-wrapper").css({'transform': 'translate(-'+ slideOffset +'px, 0)'});
+      }
+
+    }, 1000);
+  }else if($(this).hasClass("is-wrong")){
+    
+    var text = $(this).text();
+    $(this).text("Try again");
+    $(this).addClass("active");
+
+    setTimeout(() => {
+      $(this).text(text);
+      $(this).removeClass("active");
+    }, 2000);
+  }else if($(this).closest("section").next().length > 0)
+  {
+    //Take height of the current section
+    $(this).closest("section").addClass("h-0");
+    $(this).closest("section").next().removeClass("h-0");
+
+    //Scroll to top of the current section
+    $("html, body").animate({
+      scrollTop: $(this).closest("section").next().offset().top
+    }, 50);
+
+    slideOffset += $(this).closest("section").next().outerWidth();
+
+    $("#quiz-wrapper").css({'transform': 'translate(-'+ slideOffset +'px, 0)'});
+  }
+});

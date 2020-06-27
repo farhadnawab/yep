@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+  <title>YEP</title>	
+
+  <meta name="keywords" content="YEP" />
+  <meta name="description" content="YEP">
+  <meta name="author" content="https://github.com/farhadnawab">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    
+  <!-- Tailwind CSS -->
+  <link href="css/tailwind.min.css" rel="stylesheet">
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/c772f6a9db.js" crossorigin="anonymous"></script>
+
+  <!-- Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ </head>
+ <body class="not-front">
+
+  <div class="main-wrapper overflow-hidden relative">
+    
+    <!--Nav-->
+    <nav id="header" class="absolute w-full z-30 top-0 left-0">
+
+        <div class="w-full container mx-auto px-4 py-6 flex items-center">
+
+            <div data-aos="fade-right" data-aos-duration="600">
+                <a class="block logo" href="index.html">
+                    <img src="images/logo.svg" />
+                </a>
+            </div>
+
+            <div class="flex-grow flex justify-end pl-10 xl:pl-0" data-aos="fade-left" data-aos-delay="50" data-aos-duration="600">
+              <ul class="main-menu xl:flex hidden">
+                <li><a href="#">Who We Are</a>
+                  <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Staff and Board of Directors</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Accountability</a></li>
+                    <li><a href="#">Our Covid-19 Response</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">How It Works</a>
+                  <ul>
+                    <li><a href="#">Type of Programs</a></li>
+                    <li><a href="#">Curriculm and Training Model</a></li>
+                    <li><a href="#">Program Locations and Case Studies</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Impacts</a>
+                  <ul>
+                    <li><a href="#">Impacts and Benefits</a></li>
+                    <li><a href="#">Research and Insights</a></li>
+                    <li><a href="#">Stories</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Get Involved</a>
+                  <ul>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">Corporate Engagement</a></li>
+                    <li><a href="#">Speaking Engagements</a></li>
+                    <li><a href="#">Start a YEP Program</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Events</a>
+                  <ul>
+                    <li><a href="#">Soccer for Charity</a></li>
+                    <li><a href="#">Bubble Soccer for Charity</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="donate shadow-type-2">Donate</a></li>
+              </ul>
+              <button id="nav-toggle" class="inline-block xl:hidden align-middle appearance-none focus:outline-none" type="button" onclick="openMenu()">
+                <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="w-full h-full py-20 px-5 z-50 bg-primary fixed top-0 left-0" id="nav-content">
+                <button class="absolute top-0 right-0 mr-5 mt-5" type="button" onclick="closeMenu()">
+                    <svg width="36px" height="36px" viewBox="0 0 36 36">
+                        <path d="M13.2813 11.7189L13.2813 0.780128C13.2813 0.349208 12.9319 -0.00012207 12.501 -0.00012207L12.499 -0.00012207C12.0681 -0.00012207 11.7188 0.349208 11.7188 0.780128L11.7188 11.7189L0.78025 11.7189C0.34933 11.7189 0 12.0682 0 12.4991L0 12.5011C0 12.932 0.34933 13.2814 0.78025 13.2814L11.7188 13.2814L11.7188 24.2196C11.7188 24.6505 12.0681 24.9999 12.499 24.9999L12.501 24.9999C12.9319 24.9999 13.2813 24.6505 13.2813 24.2196L13.2813 13.2814L24.2197 13.2814C24.6507 13.2814 25 12.932 25 12.5011L25 12.4991C25 12.0682 24.6507 11.7189 24.2197 11.7189L13.2813 11.7189Z" transform="matrix(0.7071066 0.7071069 -0.7071069 0.7071066 17.67773 0)" id="Combined-Shape" fill="#1A1919" fill-rule="evenodd" stroke="none"></path>
+                    </svg>
+                </button>
+
+                <ul class="main-menu-mobile list-reset flex h-full flex-col w-full max-w-2xl mx-auto text-3xl text-white font-light capitalize">
+                    <li class="mb-5">
+                        <a href="#">Who We Are</a>
+                  <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Staff and Board of Directors</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Accountability</a></li>
+                    <li><a href="#">Our Covid-19 Response</a></li>
+                  </ul>
+                
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">How It Works</a>
+                  <ul>
+                    <li><a href="#">Type of Programs</a></li>
+                    <li><a href="#">Curriculm and Training Model</a></li>
+                    <li><a href="#">Program Locations and Case Studies</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                  </ul>
+                
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Impacts</a>
+                  <ul>
+                    <li><a href="#">Impacts and Benefits</a></li>
+                    <li><a href="#">Research and Insights</a></li>
+                    <li><a href="#">Stories</a></li>
+                  </ul>
+                
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Get Involved</a>
+                  <ul>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">Corporate Engagement</a></li>
+                    <li><a href="#">Speaking Engagements</a></li>
+                    <li><a href="#">Start a YEP Program</a></li>
+                  </ul>
+                
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Events</a>
+                  <ul>
+                    <li><a href="#">Soccer for Charity</a></li>
+                    <li><a href="#">Bubble Soccer for Charity</a></li>
+                  </ul>
+                
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>                
+            </div>
+            <!-- Mobile Menu - END -->
+            
+        </div>
+    </nav>
+
+    <!-- Hero Section-->
+    <section class="hero-section relative" style="background-image: url('images/tutortraining-hero.png')">
+      
+      <div class="flex w-full container mx-auto px-4 items-center">
+
+        <div class="w-3/5 text-secondary" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="-1000">
+          <h1 class="font-bold leading-none" data-aos="fade-right" data-aos-delay="500" data-aos-offset="-1000">
+            Volunteer to teach your<br/> 
+            parent & earn a grant
+          </h1>
+
+          <p class="text-lg mt-6 max-w-lg leading-normal" data-aos="fade-right" data-aos-delay="700" data-aos-offset="-1000">The Canada Student Service grant allows eligible students to earn between $1,000 and $5,000 by volunteering</p>
+          
+        </div>
+
+      </div>
+
+      <div class="hero-bottom"><img src="images/hero_bottom.png" /></div>
+    </section>
+      
+
+    <!-- "You Have got skills" Section -->
+    <section class="relative mb-20">
+      <div class="w-full container max-w-5xl mx-auto px-4 py-16 text-center">                        
+
+        <p class="leading-normal">
+          The new Canada Student Service Grant (CSSG) provides qualified post-secondary students and recent graduates with volunteer opportunities. Plus, you may be eligible to receive a grant—from $1,000 up to $5,000—in recognition of your service. If you are receiving the Canada Emergency Student Benefit ($1,250/monthly, or higher for students with disabilities or dependents), you can still qualify for the CSSG.
+        </p>
+        <h2 class="leading-tight font-bold text-secondary mt-12 md:mt-16">
+          You've got a lot of skills.<br/>
+          You could teach them to your parent/guardian and earn a grant!
+        </h2>
+
+        <p class="leading-normal mt-8 md:mt-16">
+          We'll give you training to help you teach, and you'll be able to earn a grant for your education! 
+          <br/>Here are some examples of things that other students teach:
+        </p>
+
+        <div class="flex flex-wrap text-center md:my-8 my-16">
+
+          <!-- 1st Row -->
+          <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+            <div class="flex-grow flex items-center justify-center mb-3">
+              <img class="inline-block" src="images/program-img1.png" />
+            </div>
+
+            <p class="h-10">English as a second language</p>
+          </div>
+          <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+
+            <div class="flex-grow flex items-center justify-center mb-3">
+              <img class="inline-block mb-5" src="images/program-img4.png" />
+            </div>
+
+            <p class="h-10">Computer / Smart-
+              phone skills</p>
+          </div>
+          <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+
+            <div class="flex-grow flex items-center justify-center mb-3">
+              <img class="inline-block" src="images/program-img2.png" />
+            </div>
+
+            <p class="h-10">Dance</p>
+          </div>
+          <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+
+            <div class="flex-grow flex items-center justify-center mb-3">
+              <img class="inline-block mb-5" src="images/program-img9.png" />
+            </div>
+
+            <p class="h-10">A musical instrument</p>
+          </div>
+          <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+
+            <div class="flex-grow flex items-center justify-center mb-3">
+              <img class="inline-block mb-5" src="images/program-img5.png" />
+            </div>
+
+            <p class="h-10">Basic Financial literacy</p>
+          </div>
+
+          <!-- 2nd Row -->
+          <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+
+            <div class="flex-grow flex items-center justify-center mb-3">
+              <img class="inline-block mb-5" style="max-width: 100px;" src="images/history1.png" />
+            </div>
+
+            <p class="h-10">A game</p>
+          </div>
+          <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+
+            <div class="flex-grow flex items-center justify-center mb-3">
+              <img class="inline-block mb-5" src="images/program-img3.png" />
+            </div>
+
+            <p class="h-10">Environmental literacy</p>
+          </div>
+          <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+
+            <div class="flex-grow flex items-center justify-center mb-3">
+              <img class="inline-block mb-5" src="images/program-img10.png" />
+            </div>
+
+            <p class="h-10">physical exercise</p>
+          </div>
+          <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+
+            <div class="flex-grow flex items-center justify-center mb-3">
+              <img class="inline-block mb-5" style="max-width: 150px;" src="images/history12.png" />
+            </div>
+
+            <p class="h-10">Drawing / Painting</p>
+          </div>
+          <div class="flex flex-col w-1/2 lg:w-1/5 p-4">
+
+            <div class="flex-grow flex items-center justify-center mb-3">
+              <img class="inline-block mb-5" src="images/history6.png" />
+            </div>
+
+            <p class="h-10">Something else?</p>
+          </div>
+
+        </div>
+
+        <h2 class="leading-tight font-bold text-secondary mt-8 md:mt-16">
+          Are you eligible for the CSSG?
+        </h2>
+
+        <div class="flex flex-wrap text-left">
+
+          <div class="w-full md:w-1/2 px-5">
+            <h4 class="leading-tight font-bold text-secondary mt-5 md:mt-8">To be considered eligible, you must:</h4>
+
+            <p class="leading-normal mt-5 md:mt-8">
+              • be enrolled and attending post-secondary education during spring, summer or fall 2020; or
+              <br/><br/>
+              • have graduated from PSE no earlier than December 2019; and
+              <br/><br/>
+              • be 30 years old or younger as of December 31st, 2020; and
+              <br/><br/>
+              • be a Canadian citizen, permanent resident, First Nation, Métis or Inuit, or those with Refugee status.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 px-5">        
+            <h4 class="leading-tight font-bold text-secondary mt-5 md:mt-8">Ineligible students:</h4>
+
+            <p class="leading-normal mt-5 md:mt-8">
+              • International students are not eligible.
+              <br/><br/>
+              • Students who are receiving, or who have received at any time, the Canada Emergency Response Benefit (CERB) ($2,000 monthly), are not eligible to receive the CSSG. Students will be required to attest that they have at no time been in receipt of the CERB.
+            </p>
+          </div>
+
+        </div>
+
+        <p class="text-center mt-5 md:mt-10">
+          You can see the complete and up-to-date list of eligibility requirements on the CSSG's website
+        </p>
+
+        <h2 class="leading-tight font-bold text-secondary mt-12 md:mt-16">
+          How do you get the grant?
+        </h2>
+
+        <div class="flex flex-wrap text-left">
+
+          <div class="w-full md:w-1/2 px-5">
+            <p class="leading-normal mt-5 md:mt-8">
+              The CSSG ranges from $1,000 to $5,000. The more volunteer hours you put in over the summer, the higher the grant amount you will be eligible to receive. Note that the grant is only offered in increments of $1,000 for every hundred volunteer hours completed. This means if you complete 150 hours, you’ll only be eligible for $1,000. You have until October 31st, 2020 to complete volunteer hours that are eligible for the CSSG.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 px-5">       
+            <p class="leading-normal mt-5 md:mt-8">
+              The five levels of CSSG disbursement amounts are as follows:
+              <br/><br/>
+              • 100 hours for $1,000.<br/>
+              • 200 hours for $2,000.<br/>
+              • 300 hours for $3,000.<br/>
+              • 400 hours for $4,000.<br/>
+              • 500 hours for $5,000.
+            </p>
+          </div>
+
+        </div>
+
+        <h2 class="leading-tight font-bold text-secondary mt-12 md:mt-16">
+          How do you apply?
+        </h2>
+
+        <div class="flex flex-wrap md:text-left">
+
+          <div class="w-full md:w-1/2 px-5 mt-5 md:mt-8">
+            <p class="leading-normal mt-5 md:mt-8">
+              • You'll need to apply on the <u>I Want To Help</u> website.<br/>
+              • It'll ask you a few questions to confirm your eligibility. <br/>
+              • If you want to volunteer to teach a skill to your parent, enter this referral code when asked: _________
+            </p>
+
+            <div class="ref-code border p-3 mt-6">
+              <p class="leading-normal mb-3">
+                Did you receive a referral code to volunteer with a specific group? If so, please enter the code below.                
+              </p>
+              <input type="text" class="form-control w-full" />
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 mt-10 px-5">       
+            <img class="inline-block" src="images/how-to-apply.png" />
+          </div>
+
+        </div>
+
+        <a href="javascript:void(0)" class="btn btn-primary mt-16 w-full max-w-xs">Apply for the CSSG</a>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer relative z-10 text-white bg-black">
+        <div class="container w-full max-w-6xl px-4 py-12 mx-auto">
+
+            <div class="flex flex-col text-center md:flex-row md:text-left">
+
+                <div class="md:mr-8 flex-1">
+                    <a href="index.html">
+                      <img class="inline-block" src="images/footer-logo.svg" />
+                    </a>
+                </div>
+
+                <div class="flex-1">
+                  <div class="flex justify-center md:justify-end text-xs leading-relaxed">
+
+                    <div class="social-links flex items-center">
+                      <a href="#" class="mr-6"><img src="images/icons/footer-facebook.svg" /></a>
+                      <a href="#" class="mr-6"><img src="images/icons/footer-twitter.svg" /></a>
+                      <a href="#" class="mr-6"><img src="images/icons/footer-linkedin.svg" /></a>
+                    </div>
+      
+                    <p style="color: #8d8d8d;">Copyright 2020<br/>
+                      Youth Empowering Parents</p>
+                  </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+  </div>
+
+  <!-- POPUPS -->
+
+  <div class="popup-overlay">
+
+    <!-- POPUP 1 -->
+    <div class="popup" id="popup-video">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="responsive-video"><iframe class="w-full" src=""></iframe></div>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 1 END -->
+
+  </div>
+  <!-- POPUP END -->
+   
+</body>
+
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ 
+ <!-- Animate On Scroll -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+ <script src="js/main.js"></script> 
+
+</html>

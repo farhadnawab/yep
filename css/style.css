@@ -59,7 +59,7 @@ h1{
     font-size: 3.4375rem;
 }
 h2{
-    font-size: 2.1875rem;
+    font-size: 2.1075rem;
 }
 h3{
     font-size: 1.875rem;
@@ -167,6 +167,7 @@ h6{
     transition: all ease 0.3s;
     min-width: 150px;
     text-align: center;
+    outline: none !important;
 }
 .btn.rounded{
     border-radius: 20px;
@@ -175,38 +176,42 @@ h6{
     font-size: 0.9rem;
     min-width: 0;
 }
+.btn[disabled] {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
 .btn:hover{
     background-color: var(--brand-tertiary);
 }
-.btn-primary{
+.btn-primary, .btn-primary.no-hover:hover{
     background-color: var(--brand-primary);
     color: #fff;
 }
-.btn-primary:hover{
+.btn-primary:hover, .btn-primary.active, .btn-primary.active:hover{
     background-color: var(--brand-secondary);
     color: #fff;
 }
-.btn-secondary{
+.btn-secondary, .btn-secondary.no-hover:hover{
     background-color: var(--brand-secondary);
     color: #fff;
 }
-.btn-secondary:hover{
+.btn-secondary:hover, .btn-secondary.active, .btn-secondary.active:hover{
     background-color: var(--brand-primary);
     color: #fff;
 }
-.btn-fourth{
+.btn-fourth, .btn-fourth.no-hover:hover{
     background-color: var(--brand-fourth);
     color: #707070;
 }
-.btn-fourth:hover{
+.btn-fourth:hover, .btn-fourth.active, .btn-fourth.active:hover{
     background-color: var(--brand-secondary);
     color: #fff;
 }
-.btn-white{
+.btn-white, .btn-white.no-hover:hover{
     background-color: #fff;
     color: var(--brand-primary);
 }
-.btn-white:hover{
+.btn-white:hover, .btn-white.active, .btn-white.active:hover{
     background-color: var(--brand-primary);
     color: #fff;
 }
@@ -579,6 +584,11 @@ body.popup-active{
 }
 .footer .links a:hover{
     color: var(--brand-primary);
+}
+
+
+.animate-translate{
+    transition: all ease 0.7s;
 }
 
 /**** Responsive *****/
