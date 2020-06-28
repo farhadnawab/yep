@@ -622,8 +622,11 @@ body.popup-active{
     }
 }
 
-@media only screen and (max-width: 992px) and (min-width: 768px){
+@media only screen and (max-width: 992px){
 
+    .hero-section.tutor-training{
+        background-position: right 15% bottom -50px !important;
+    }
 }
 
 @media only screen and (max-width: 768px){
