@@ -364,6 +364,28 @@ section.we-spend-charitable img{
     
     margin: 0 auto;
 }
+section.we-spend-charitable p{
+    position: relative;
+}
+.spend-charitable p::before{
+    content: ",,";
+    font-size: 150px;
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    color: #000A3B;
+    display: block;
+    transform: rotate(180deg);
+}
+.spend-charitable p::after{
+    content: ",,";
+    font-size: 150px;
+    position: absolute;
+    right: -50px;
+    bottom: 0px;
+    color: #000A3B;
+    display: block;
+}
 
 /*** Donate By Boxes ***/
 .donate-by-box{
@@ -400,8 +422,106 @@ section.we-spend-charitable img{
     -moz-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+.donate-section .donate-con{
+    background-color: #D18585;
+    width: 100%;
+    /* height: 939px; */
+}
 
+/*   social-return-background   */
 
+.social-return-background{
+    background-image: url("../images/social-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social-return{
+    background-color: #F7F8FC;
+}
+
+.social-return-background h3{
+    line-height: 53px;
+}
+
+/*  row-grid  */
+
+.grid-row-section .row-grid{
+    width: 47%;
+}
+
+/*   health  */
+
+.health-info{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*   grid col  */
+
+.grid-col{
+    margin-top: 174px;
+}
+.main-grid .line{
+   position: absolute;
+   /* left: 48%; */
+   z-index: -1;
+}
+.main-grid .back-line{
+   margin-top: 250px;
+ }
+.main-grid h3{
+    position: absolute;
+    left: 53%;
+    margin-top: 13px;
+}
+.main-grid .line-1{
+    margin-top: 250px;
+}
+.main-grid{
+    max-width: 1582px !important;
+}
+.main-grid .text-style{
+    color: #BDBCEC;
+}
+.grid-col img{
+    border-radius: 19px;
+}
+.grid-col .content{
+    background-color: #F7F8FC;
+    border-radius: 19px;
+}
+
+.main-grid .mx-auto{
+    right: 0 !important;
+    height: auto;
+}
+/* .employment img{
+    height: 673px;
+    object-fit: cover;
+} */
+/* .main-grid .flex:nth-child(3) img{
+    position: relative;
+    right: 100px;
+}
+.main-grid .flex:nth-child(7) img{
+    position: relative;
+    right: 100px;
+}
+.main-grid .flex:nth-child(11) img{
+    position: relative;
+    right: 100px;
+} */
+.main-grid .employment{
+    width: 47%;
+}
+.main-grid .employment-img{
+    width: 55%;
+}
+.main-grid .employment-con{
+    width: 45%;
+}
 /*** Our Story ***/
 .storyline{
     background-image: url("../images/storyline.png");
@@ -410,7 +530,15 @@ section.we-spend-charitable img{
     background-size: auto 97%;
 }
 
+/*  donated benefit  */
 
+.donated-benefit{
+   height: 600px;
+   background-color: #F7F8FC;
+}
+.boxx{
+    height: 290px;
+}
 /*** POPUP ***/
 body.popup-active{
     overflow: hidden;
@@ -606,6 +734,34 @@ body.popup-active{
     }
 }
 
+@media only screen and (max-width: 1200px){
+
+    .main-grid .line{
+        display: none;
+    }
+    .main-grid .flex:nth-child(3) .content, .main-grid .flex:nth-child(7) .content, .main-grid .flex:nth-child(11) .content{
+       padding-left: 0;
+       padding-right: 90px;
+   }
+   .main-grid .flex:nth-child(3) img, .main-grid .flex:nth-child(7) img, .main-grid .flex:nth-child(11) img{
+      right: 0;
+   }
+   
+   .main-grid .mx-auto {
+       height: auto !important;
+   }
+   .grid-col {
+       margin-top: 100px;
+   }
+   .main-grid .back-line{
+      margin-top: 150px;
+   }
+   .main-grid .back-line h3{
+       transform: translateX(-50%);
+   }
+   
+   }
+
 @media only screen and (max-width: 1024px){
 
     html{font-size: 14px;}
@@ -620,6 +776,30 @@ body.popup-active{
     .open-book .pages > .page > *{
         padding: 1rem;
     }
+    .main-grid .employment{
+        width: 100%;
+    }
+    .main-grid .employment-c .content{
+        padding: 15px 20px;
+    }
+    .main-grid .employment-img{
+        width: 100%;
+    }
+    .main-grid .employment-con {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .employment .content{
+        margin-top: 20px;
+        text-align: center;
+        padding: 15px 20px;
+    }
+    .employment img {
+        height: auto;
+    }
+    .donated-benefit{
+        height: 600px;
+     }
 }
 
 @media only screen and (max-width: 992px){
@@ -627,6 +807,20 @@ body.popup-active{
     .hero-section.tutor-training{
         background-position: right 15% bottom -50px !important;
     }
+    .employment{
+        display: flex;
+        justify-content: center;
+    }
+    .main-grid .flex:nth-child(3) .content, .main-grid .flex:nth-child(7) .content, .main-grid .flex:nth-child(11) .content{
+        padding-right: 0;
+        padding: 15px 20px;
+    }
+    .main-grid .flex h3{
+        transform: translateX(-50%);
+    }
+    .donated-benefit{
+        height: 500px;
+     }
 }
 
 @media only screen and (max-width: 768px){
@@ -686,7 +880,21 @@ body.popup-active{
     .front .hero-section {
         background-position: right 15% bottom;
     }
+    .donated-benefit{
+        height: 500px;
+     }
+     .main-grid .back-line {
+        margin-top: 60px;
+    }
+    .donate-img img{
+        margin: auto;
+        width: 400px;
+    }
+    .boxx{
+        height:auto;
+    }
 }
+
 
 @media only screen and (max-width: 640px){
 
@@ -695,6 +903,30 @@ body.popup-active{
         max-width: 100%;
         width: 100%;
         background: rgba(51, 51, 51, 1);
+    }
+    .grid-row-section .row-grid {
+        width: 100%;
+    }
+    .social-return-background h3 {
+        line-height: normal;
+    }
+    .spend-charitable p{
+        padding: 0 20px;
+    }
+    .spend-charitable p::before{
+        font-size: 40px;
+        left: 0;
+    }
+    .spend-charitable p::after{
+        font-size: 40px;
+        right: 0;
+    }
+    .main-grid h3 {
+        position: absolute;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+        margin-top: 13px;
     }
 }
 
@@ -738,4 +970,5 @@ body.popup-active{
     .open-book .pages {
         padding: 0.5rem;
     }
+
 }

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+  <title>YEP</title>	
+
+  <meta name="keywords" content="YEP" />
+  <meta name="description" content="YEP">
+  <meta name="author" content="https://github.com/farhadnawab">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    
+  <!-- Tailwind CSS -->
+  <link href="css/tailwind.min.css" rel="stylesheet">
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/c772f6a9db.js" crossorigin="anonymous"></script>
+
+  <!-- Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ </head>
+ <body class="not-front">
+
+  <div class="main-wrapper overflow-hidden relative">
+    
+    <!--Nav-->
+    <nav id="header" class="absolute w-full z-30 top-0 left-0">
+
+        <div class="w-full container mx-auto px-4 py-6 flex items-center">
+
+            <div data-aos="fade-right" data-aos-duration="600">
+                <a class="block logo" href="index.html">
+                    <img src="images/logo.svg" />
+                </a>
+            </div>
+
+            <div class="flex-grow flex justify-end pl-10 xl:pl-0" data-aos="fade-left" data-aos-delay="50" data-aos-duration="600">
+              <ul class="main-menu xl:flex hidden">
+                <li><a href="#">Who We Are</a>
+                  <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Staff and Board of Directors</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Accountability</a></li>
+                    <li><a href="#">Our Covid-19 Response</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">How It Works</a>
+                  <ul>
+                    <li><a href="#">Type of Programs</a></li>
+                    <li><a href="#">Curriculm and Training Model</a></li>
+                    <li><a href="#">Program Locations and Case Studies</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Impacts</a>
+                  <ul>
+                    <li><a href="#">Impacts and Benefits</a></li>
+                    <li><a href="#">Research and Insights</a></li>
+                    <li><a href="#">Stories</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Get Involved</a>
+                  <ul>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">Corporate Engagement</a></li>
+                    <li><a href="#">Speaking Engagements</a></li>
+                    <li><a href="#">Start a YEP Program</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Events</a>
+                  <ul>
+                    <li><a href="#">Soccer for Charity</a></li>
+                    <li><a href="#">Bubble Soccer for Charity</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="donate shadow-type-2">Donate</a></li>
+              </ul>
+              <button id="nav-toggle" class="inline-block xl:hidden align-middle appearance-none focus:outline-none" type="button" onclick="openMenu()">
+                <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="w-full h-full py-20 px-5 z-50 bg-primary fixed top-0 left-0" id="nav-content">
+                <button class="absolute top-0 right-0 mr-5 mt-5" type="button" onclick="closeMenu()">
+                    <svg width="36px" height="36px" viewBox="0 0 36 36">
+                        <path d="M13.2813 11.7189L13.2813 0.780128C13.2813 0.349208 12.9319 -0.00012207 12.501 -0.00012207L12.499 -0.00012207C12.0681 -0.00012207 11.7188 0.349208 11.7188 0.780128L11.7188 11.7189L0.78025 11.7189C0.34933 11.7189 0 12.0682 0 12.4991L0 12.5011C0 12.932 0.34933 13.2814 0.78025 13.2814L11.7188 13.2814L11.7188 24.2196C11.7188 24.6505 12.0681 24.9999 12.499 24.9999L12.501 24.9999C12.9319 24.9999 13.2813 24.6505 13.2813 24.2196L13.2813 13.2814L24.2197 13.2814C24.6507 13.2814 25 12.932 25 12.5011L25 12.4991C25 12.0682 24.6507 11.7189 24.2197 11.7189L13.2813 11.7189Z" transform="matrix(0.7071066 0.7071069 -0.7071069 0.7071066 17.67773 0)" id="Combined-Shape" fill="#1A1919" fill-rule="evenodd" stroke="none"></path>
+                    </svg>
+                </button>
+
+                <ul class="main-menu-mobile list-reset flex h-full flex-col w-full max-w-2xl mx-auto text-3xl text-white font-light capitalize">
+                    <li class="mb-5">
+                        <a href="#">Who We Are</a>
+                  <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Staff and Board of Directors</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Accountability</a></li>
+                    <li><a href="#">Our Covid-19 Response</a></li>
+                  </ul>
+                
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">How It Works</a>
+                  <ul>
+                    <li><a href="#">Type of Programs</a></li>
+                    <li><a href="#">Curriculm and Training Model</a></li>
+                    <li><a href="#">Program Locations and Case Studies</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                  </ul>
+                
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Impacts</a>
+                  <ul>
+                    <li><a href="#">Impacts and Benefits</a></li>
+                    <li><a href="#">Research and Insights</a></li>
+                    <li><a href="#">Stories</a></li>
+                  </ul>
+                
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Get Involved</a>
+                  <ul>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">Corporate Engagement</a></li>
+                    <li><a href="#">Speaking Engagements</a></li>
+                    <li><a href="#">Start a YEP Program</a></li>
+                  </ul>
+                
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Events</a>
+                  <ul>
+                    <li><a href="#">Soccer for Charity</a></li>
+                    <li><a href="#">Bubble Soccer for Charity</a></li>
+                  </ul>
+                
+                    </li>
+                    <li class="mb-5">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>                
+            </div>
+            <!-- Mobile Menu - END -->
+            
+        </div>
+    </nav>
+
+    <!-- Hero Section-->
+    <section class="hero-section relative" style="background-image: url('images/sroi.png')">
+      
+      <div class="flex w-full container mx-auto px-4 items-center">
+
+        <div class="w-3/5 text-secondary" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="-1000">
+          <h1 class="font-bold leading-none" data-aos="fade-right" data-aos-delay="500" data-aos-offset="-1000">A Social Return on Investment</h1>
+
+          <p class="text-lg mt-6 max-w-lg leading-normal" data-aos="fade-right" data-aos-delay="700" data-aos-offset="-1000">For every $1 invested in the YEP program there is a societal benefit of $27. </p>
+
+
+        </div>
+
+      </div>
+
+      <div class="hero-bottom"><img src="images/hero_bottom.png" /></div>
+
+    </section>
+
+    <!-- Section -->
+    <section class="relative" data-aos="fade-up" data-aos-duration="1000">
+        <section class="relative we-spend-charitable" data-aos="fade-up" data-aos-duration="1000">
+            <div class="w-full container mx-auto px-4 pt-12 py-32 text-center">                        
+      
+              <h2 class="leading-tight font-bold text-secondary mb-2">Key Highlights</h2>
+      
+              <div class="flex flex-wrap lg:mt-12 mt-0" style="color: #404040;">
+                
+                <!-- 1st Row -->
+                <div class="w-full sm:w-1/2 lg:w-1/4 px-2 mx-auto lg:mt-28 mt-16" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
+      
+                  <img class="inline-block" src="images/key-1.png" />
+                  <p class="md:text-lg lg:w-11/12 w-full mx-auto text-sm font-gibson mt-2 text-black md:leading-7	leading-normal md:mt-10 mt-5">Over 1,000 participants benefit yearly, across 5 countries: Canada, Spain, Poland, Ethiopia, and Niger</p>
+      
+                </div>
+      
+                <div class="w-full sm:w-1/2 lg:w-1/4 px-2 mx-auto lg:mt-28 mt-16" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="450">
+      
+                  <img class="inline-block" src="images/key-2.png" />
+                  <p class="md:text-lg lg:w-56 w-full text-sm mx-auto font-gibson mt-2 text-black md:leading-7	leading-normal md:mt-10 mt-5">YEP is one of only a handful 
+                    of organizations to receive the United Nations’ Innovation award</p>
+      
+                </div>
+      
+                <div class="w-full sm:w-1/2 lg:w-1/4 px-2 mx-autolg:mt-28 mt-16" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="500">
+      
+                  <img class="inline-block" src="images/key-3.png" />
+                  <p class="md:text-lg lg:w-56 w-full text-sm mx-auto font-gibson mt-2 text-black md:leading-7	leading-normal md:mt-10 mt-5">Over 300,000 volunteers hours contributed by youth, a value of $4.5 million</p>
+      
+                </div>
+      
+                <div class="w-full sm:w-1/2 lg:w-1/4 px-2 mx-auto lg:mt-28 mt-16" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="550">
+      
+                  <img class="inline-block" src="images/key-4.png" />
+                  <p class="md:text-lg lg:w-56 w-full text-sm mx-auto font-gibson mt-2 text-black md:leading-7	leading-normal md:mt-10 mt-5">The investment in each youth is $250, compared to the industry average of $3,740</p>
+      
+                </div>
+                <!-- 1st Row END -->
+      
+              </div>
+            </div>
+          </section>
+    </section>
+
+
+    <!-- "Why it Works" Section -->
+    <section class="relative social-return-background mb-8" data-aos="fade-up" data-aos-duration="1000">
+      <div class="w-full container mx-auto px-4 py-32">                        
+
+        <div class="flex md:flex-nowwrap flex-wrap justify-between">
+          
+          <div class="md:w-1/2 w-full">
+            <div class="relative">
+              <h3 class="lg:text-4xl md:text-3xl mx-auto sm-text-2xl lg:pr-16 pr-0 text-xl text-white leading-10 font-bold lg:w-3/4 w-full">What is Social Return 
+                On Investment (SROI)?</h3>
+            </div>
+          </div>
+          <div class="md:w-1/2 w-full">
+            <div class="relative">
+              <p class="font-gibson leading-6 md:mt-0 mt-6 md:text-xl text-lg text-white md:leading-8 lg:max-w-lg w-full leading-normal"> Social Return on Investment (SROI) is a concept and practice pioneered by the Roberts Enterprise Development Fund in 1999, that “provides a metric for quantifying nonprofits’ financial and social values…” </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section class="relative" data-aos="fade-up" data-aos-duration="1000">
+        <div class="w-full grid-row-section container mx-auto px-4 md:py-24 py-14">                        
+  
+          <div class="flex flex-wrap font-gibson justify-between">
+            
+            <div class="row-grid mb-6 md:mb-0 mr-28">
+              <img class="inline-block" src="images/grid-1.png" />
+              <div>
+                  <h4 class="md:text-3xl sm:text-2xl text-xl font-bold text-primary md:pt-8 pt-5">Example 1</h4>
+                  <p class="md:text-lg text-base pt-4 text-black md:leading-7 leading-normal">The Institute for Social Research and the School of Public Health at the University of Michigan evaluated the Boys & Girls Clubs of America. It found that Boys & Girls Clubs produce lasting value for youth, families and communities, through improved grades, reduced alcohol use, increased earning power of parents and of youth when they become adults, and reduce expenditures in the criminal justice system. Based on expenditures to achieve outcomes, it was found that every for every $1 invested in the organization, a return of $9.60 social impact was generated.
+                </p>
+              </div>
+            </div>
+  
+            <div class="row-grid mb-6 md:mb-0">
+                <img class="inline-block" src="images/grid-2.png" />
+                <div>
+                    <h4 class="md:text-3xl sm:text-2xl text-xl font-bold text-primary md:pt-8 pt-5">Example 2</h4>
+                  <p class="md:text-lg text-base pt-4 text-black md:leading-7 leading-normal">The International SROI Network applied SROI to an example of creating an emergency medical system in Kenya. Costs included ambulances, paramedics and equipment. Benefits included value of lives saved, less disability, acquisition of skills through training, and reduced welfare spending. If the Kenyan government had spent $10,000 to create the emergency medical system (costs), and if they no longer had to tackle the issues of disability, welfare, etc. which usually cost $30,000 (benefits), then to calculate SROI we would divide $30,000 by $10,000. This would yield to a ratio of 3:1, indicating that an investment of $1 into the medical system delivers $3 in value to the Kenyan society.
+                  </p>
+                </div>
+              </div>
+  
+          </div>
+        </div>
+      </section>
+
+
+    <!-- "Why it Works" Section -->
+    <section class="relative social-return" data-aos="fade-up" data-aos-duration="1000">
+        <div class="w-full container mx-auto px-4 py-24">                        
+  
+          <h2 class="leading-tight text-secondary lg:mb-10 md:mb-8 mb-6 lg:text-4xl	md:text-3xl sm:text-2xl text-xl font-bold text-center">What is the Social Return on Investment for YEP?</h2>
+          <p class="font-gibson md:text-lg text-base text-black text-center md:leading-7 leading-normal">Our organization’s review was conducted by Community Seed Consulting <br>
+           based in part on metrics created by volunteers from Boston Consulting Group. <br>
+           Four categories of differential life outcomes for adults and youth alike to calculate our SROI:</p>
+          <div class="flex flex-wrap -mx-5 md:mt-20 mt-12">
+            
+            <!-- 1st Row -->
+            <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+              <div class="relative">
+                <img class="inline-block" src="images/health-2.png" />
+                <div class="absolute health-info w-full text-center">
+
+                    <h4 class="text-white lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold">Employment</h4>
+                    <h5 class="text-white md:text-base text-sm pt-3">Jump to section</h5>
+                     <a href="/" class="mt-3 inline-block"> <img src="images/down-icon.png" alt=""> </a>
+                </div>
+              </div>
+            
+            </div>
+  
+            <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+                <div class="relative">
+                  <img class="inline-block" src="images/health-3.png" />
+                  <div class="absolute health-info w-full text-center">
+  
+                      <h4 class="text-white md:w-3/4 w-full mx-auto lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold">Mental Health 
+                        and Well-Being</h4>
+                      <h5 class="text-white md:text-base text-sm pt-3">Jump to section</h5>
+                       <a href="/" class="mt-3 inline-block"> <img src="images/down-icon.png" alt=""> </a>
+                  </div>
+                </div>
+              
+            </div>
+  
+            <div class="w-full md:w-1/3 max-w-md md:max-w-full mb-12 mx-auto px-5 md:flex md:flex-col">
+                <div class="relative">
+                  <img class="inline-block" src="images/health-1.png" />
+                  <div class="absolute health-info w-full text-center">
+  
+                      <h4 class="text-white lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold">Better Communities</h4>
+                      <h5 class="text-white md:text-base text-sm pt-3">Jump to section</h5>
+                       <a href="/" class="mt-3 inline-block"> <img src="images/down-icon.png" alt=""> </a>
+                  </div>
+                </div>
+              
+              </div>
+  
+          </div>
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+        <div class="w-full container mx-auto px-4 py-24 main-grid">
+            <div class="flex justify-center">
+                <div class="line">
+                    <img src="images/line.png" alt="">
+                </div>
+                <h3 class="text-secondary lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold">Employment</h3>   
+            </div>                      
+            <div class="flex flex-wrap grid-col justify-between font-gibson">
+            
+              <div class="w-full employment-img mb-6 md:mb-0">
+                <img class="inline-block" src="images/employment-1.png" />
+              </div>
+    
+              <div class="w-full employment-con text-center">
+                <div class="content py-12 md:px-20 px-8 lg:ml-12 ml-0">
+                <h2 class="lg:w-3/4 mx-auto w-full font-bold text-primary lg:text-3xl	md:text-2xl sm:text-xl text-lg text-center lg:leading-10 leading-normal">Higher Academic Achievement among Youth</h2>
+                <div class="py-8">
+                    <img src="images/com-img-1.png" class="mx-auto" alt="">
+                </div>
+                <p class="leading-relaxed font-gibson text-black md:text-base text-sm">
+                  The YEP Advantage: 85% of YEP youth report higher grades following YEP program participation and their increased ability to perform academically leads them to strive for higher education.
+                </p>
+                 
+                 <p class="leading-relaxed font-gibson text-black md:text-base text-sm mt-4"> What the research says: Students who achieve higher grades early on are more likely to pursue post-secondary education. The better the academic performance, the more likely they are to aspire to university studies. SROI studies indicate that greater academic achievement among young people leads to a monetary metric value of $13,111 per person.
+                </p>
+                
+                
+              </div>
+    
+            </div>
+            </div>
+            <div class="flex flex-wrap flex-row-reverse grid-col font-gibson justify-end">
+            
+              <div class="w-full employment-img mb-6 md:mb-0">
+                <img class="inline-block" src="images/employment-2.png" />
+              </div>
+    
+              <div class="w-full employment-con text-center">
+              <div class="content py-12 md:px-20 px-8 lg:mr-12 ml-0">
+                <h2 class="lg:w-3/4 mx-auto w-full font-bold text-primary lg:text-3xl	md:text-2xl sm:text-xl text-lg text-center lg:leading-10 leading-normal">Improved Language Proficiency among Adults</h2>
+                <div class="py-8">
+                    <img src="images/com-img-2.png" class="mx-auto" alt="">
+                </div>
+                <p class="leading-relaxed font-gibson text-black md:text-base text-sm">
+                  The YEP Advantage: 100% of adults in the program reported increased language proficiency.
+
+
+                  <br/><br/>
+                  What the research says:  Increased language proficiency of adults leads to increase in earning power in the Canadian workplace. The potential increase in mean earnings for those with high language abilities compared to those with lower language proficiencies is $3,600 per worker.
+
+                </p>
+                
+                
+              </div>
+    
+            </div>
+            </div>
+
+            <div class="flex flex-wrap grid-col justify-end font-gibson">
+            
+              <div class="w-full employment-img mb-6 md:mb-0">
+                <img class="inline-block" src="images/employment-3.png" />
+              </div>
+    
+              <div class="w-full employment-con text-center">
+                <div class="content py-12 md:px-24 px-8 lg:ml-12 ml-0">
+                <h2 class="lg:w-3/4 mx-auto w-full font-bold text-primary lg:text-3xl	md:text-2xl sm:text-xl text-lg text-center lg:leading-10 leading-normal md:w-3/4 w-full">Improved Literacy 
+                  Among Adults</h2>
+                <div class="py-8">
+                    <img src="images/com-img-3.png" class="mx-auto" alt="">
+                </div>
+                <p class="leading-relaxed font-gibson text-black md:text-base text-sm">
+                  The YEP Advantage: 100% of adults in the program reported increased digital literacy after participating in a YEP program.
+                </p>
+                <p class="leading-relaxed font-gibson text-black md:text-base text-sm lg:px-8 px-0 mt-6">
+                  What the research says: Improved digital literacy of adults leads to an increase in earning power. The national productivity gain is $1,600 per adult worker.
+                </p>
+                
+                
+              </div>
+    
+            </div>
+            </div>
+
+
+         <div class="flex justify-center back-line">
+            <div class="line">
+                <img src="images/line-2.png" alt="">
+            </div>
+            <h3 class="text-secondary lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold">Mental Health and Wellbeing</h3>   
+        </div>                     
+        <div class="flex flex-wrap grid-col justify-end font-gibson">
+            
+          <div class="w-full employment-img mb-6 md:mb-0">
+            <img class="inline-block" src="images/employment-4.png" />
+          </div>
+
+          <div class="w-full employment-con text-center">
+            <div class="content py-12 md:px-16 px-8 lg:ml-12 ml-0">
+            <h2 class="lg:w-3/4 mx-auto w-full text-style font-bold text-primary lg:text-3xl	md:text-2xl sm:text-xl text-lg text-center lg:leading-10 leading-normal">Reduced Feelings of Parentification among Youth</h2>
+            <div class="py-8">
+                <img src="images/com-img-4.png" class="mx-auto" alt="">
+            </div>
+            <p class="leading-relaxed font-gibson text-black md:text-base text-sm">
+              The YEP Advantage:  After their parents participate in a YEP program, their children reap the benefit of being able to spend less time helping them in everyday tasks. 1 in 4 youth in YEP live in parentified households.
+
+              <br/><br/>
+              What the research says: Youth who are not parentified earn $7,428/year more than those who experience parentification.
+            </p>
+            
+            
+          </div>
+
+        </div>
+        </div>
+        <div class="flex flex-wrap flex-row-reverse grid-col font-gibson justify-end">
+            
+          <div class="w-full employment-img mb-6 md:mb-0">
+            <img class="inline-block" src="images/employment-5.png" />
+          </div>
+
+          <div class="w-full employment-con text-center">
+          <div class="content py-12 md:px-24 px-8 lg:mr-12 ml-0">
+            <h2 class="text-style mx-auto lg:w-3/4 w-full font-bold text-primary lg:text-3xl	md:text-2xl sm:text-xl text-lg text-center lg:leading-10 leading-normal">Higher Self-Esteem among Youth
+            </h2>
+            <div class="py-8">
+                <img src="images/com-img-5.png" class="mx-auto" alt="">
+            </div>
+            <p class="leading-relaxed font-gibson text-black md:text-base text-sm">
+              The YEP Advantage: YEP youth report improved feelings of accomplishment and personal development after completing the program.
+              <br/><br/>
+              What the research says:  Children from low-income families with higher self-esteem during adolescence earn $7,000/year more compared to those with poor self-esteem.
+            </p>
+            
+            
+          </div>
+
+        </div>
+        </div>
+      <div class="flex flex-wrap grid-col justify-end font-gibson">
+            
+          <div class="w-full employment-img mb-6 md:mb-0">
+            <img class="inline-block" src="images/emploment-6.png" />
+          </div>
+
+          <div class="w-full employment-con text-center">
+            <div class="content py-12 md:px-20 px-8 lg:ml-12 ml-0">
+            <h2 class="lg:w-3/4 mx-auto w-full text-style font-bold text-primary lg:text-3xl	md:text-2xl sm:text-xl text-lg text-center lg:leading-10 leading-normal">Language Proficiency and Reduced Isolation among Adults</h2>
+            <div class="py-8">
+                <img src="images/com-img-6.png" class="mx-auto" alt="">
+            </div>
+            <p class="leading-relaxed font-gibson text-black md:text-base text-sm">
+              The YEP Advantage:  1 in 4 adults and seniors in enrolled in YEP are learning communication skills in our national language, and reducing their anxiety and social isolation.
+              <br/><br/>
+              What the research says: Ability to effectively communicate the national language reduces immigrant social anxiety and reduces social isolation, resulting in reduced government spending (e.g. direct and indirect costs to government for anxiety disorders in Canada). The Canadian government spends $7,428 per person who suffers from anxiety (direct and indirect costs) on anxiety disorders each year.
+            </p>
+            
+            
+          </div>
+
+        </div>
+      </div>
+      <div class="overflow-hidden	relative">
+     <div class="flex justify-center back-line">
+        <div class="line">
+            <img src="images/line-3.png" alt="">
+        </div>
+        <h3 class="text-secondary lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold">Better Communities</h3>   
+      </div>                     
+      <div class="flex flex-wrap grid-col justify-end font-gibson">
+            
+        <div class="w-full employment-img mb-6 md:mb-0">
+          <img class="inline-block" src="images/employment-7.png" />
+        </div>
+
+        <div class="w-full employment-con text-center">
+          <div class="content py-12 md:px-24 px-8 lg:ml-12 ml-0">
+          <h2 class="lg:w-3/4 mx-auto w-full font-bold text-primary lg:text-3xl	md:text-2xl sm:text-xl text-lg text-center lg:leading-10 leading-normal">Increased Likelihood of Volunteering Again among Youth</h2>
+          <div class="py-8">
+              <img src="images/com-img-7.png" class="mx-auto" alt="">
+          </div>
+          <p class="leading-relaxed font-gibson text-black md:text-base text-sm">
+            The YEP Advantage: More than 80% of YEP youth cite that they would volunteer again in the future. YEP youth learn and reap the benefits of volunteering, and they report increased likelihood of volunteering again in the future.
+            <br/><br/>
+            What the research says: There are future community benefits via increased likelihood to volunteer as adult, such as increased educational and occupational opportunities, as well as mental and physical health benefits. Moreover, the value of volunteerism to the community is $3,599.14.</p>     
+        </div>
+
+      </div>
+      </div>
+      <div class="flex flex-wrap flex-row-reverse grid-col font-gibson justify-end">
+            
+        <div class="w-full employment-img mb-6 md:mb-0">
+          <img class="inline-block" src="images/employment-8.png" />
+        </div>
+
+        <div class="w-full employment-con text-center">
+        <div class="content py-12 md:px-20 px-8 lg:mr-12 ml-0">
+          <h2 class="lg:w-3/4 mx-auto w-full font-bold text-primary lg:text-3xl	md:text-2xl sm:text-xl text-lg text-center lg:leading-10 leading-normal">More Efficient Spending 
+            of Donated Funds
+          </h2>
+          <div class="py-8">
+              <img src="images/com-img-8.png" class="mx-auto" alt="">
+          </div>
+          <p class="leading-relaxed font-gibson text-black md:text-base text-sm">
+            The YEP Advantage: YEP mostly operates in at-risk communities. The average cost for other programs to support youth at-risk is $3740 per youth. The cost YEP spends per youth is $250.
+            <br/><br/>
+            What the research says:  At-risk volunteers increase their likelihood of becoming better role models in the community. 13% of children who do not participate in volunteer activities are likely to partake in delinquent behaviour compared to only 7% of children who participated in volunteer activities</p>
+          
+          
+        </div>
+
+      </div>
+      </div>
+      
+        </div>
+      </section>
+
+      <!-- Donated Benefit -->
+
+      <section class="relative donated-benefit flex items-center justify-end my-16" data-aos="fade-up" data-aos-duration="1000">
+          <div class="w-full container mx-auto px-4 lg:text-left text-center">
+            <div class="flex flex-md:flex-nowwrap flex-wrap">                        
+             <div class="md:w-3/5 w-full">
+               <div class="donate-img">
+                 <img src="images/donate-benefit-i.png" alt="">
+               </div>
+             </div>
+            <div class="md:w-2/5 w-full flex items-center md:mt-0 mt-6">
+               <h2 class="lg:w-96 w-full ml-auto text-secondary font-bold lg:text-4xl md:text-3xl sm:text-2xl text-xl md:leading-10 leading-normal">Every $1 Donated = 
+                $27 Benefit for Society</h2>
+            </div>
+          </div>
+          </div>
+      </section>
+    
+      <!-- Donated Benefit -->
+
+      <!-- GALLERY -->
+      <section class="relative" data-aos="fade-up" data-aos-duration="1000">
+        <section class="relative spend-charitable we-spend-charitable" data-aos="fade-up" data-aos-duration="1000">
+            <div class="w-full container mx-auto px-4 pt-12 py-32 text-center">                        
+      
+              <h2 class="text-secondary text-center font-bold lg:text-4xl	md:text-3xl sm:text-2xl text-xl md:leading-10	leading-normal">Gallery</h2>
+              <div>
+                <img src="images/gallery.png" alt="">
+              </div>
+              <div class="flex lg:px-56 md:px-48 px-0">
+                
+                <p class="text-secondary md:text-2xl text-xl font-bold md:leading-8 leading-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+               
+              </div>
+            
+            </div>
+          </section>
+      </section>
+
+      <!-- GALLERY -->
+
+    <!-- Footer -->
+    <footer class="footer relative z-10 text-white bg-black">
+        <div class="container w-full max-w-6xl px-4 pt-20 pb-6 mx-auto">
+
+            <div class="flex flex-col text-center md:flex-row md:text-left">
+
+                
+                <div class="md:mr-8 flex-1">
+                    <a href="index.html">
+                      <img class="inline-block" src="images/footer-logo.svg" />
+                    </a>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                    <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Who We Are</h6>
+
+                    <div class="links">
+                      <a href="#">Our Story</a>
+                      <a href="#">Staff and Board of Directors</a>
+                      <a href="#">News</a>
+                      <a href="#">Accountability</a>
+                      <a href="#">Our COVID-19 Response</a>
+                    </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">How it Works</h6>
+
+                  <div class="links">
+                    <a href="#">Type of Programs</a>
+                    <a href="#">Curriculm and Training Model</a>
+                    <a href="#">Program Locations and Case Studies</a>
+                    <a href="#">Partnerships</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Impacts</h6>
+
+                  <div class="links">
+                    <a href="#">Impacts and Benefits</a>
+                    <a href="#">Research and Insights</a>
+                    <a href="#">Stories</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Get Involved</h6>
+
+                  <div class="links">
+                    <a href="#">Donate</a>
+                    <a href="#">Volunteer</a>
+                    <a href="#">Corporate Engagement</a>
+                    <a href="#">Speaking Engagements</a>
+                    <a href="#">Start a YEP Program</a>
+                  </div>
+                </div>
+
+                <div class="md:mr-8 flex-1">
+                  <h6 class="text-xl font-bold mt-6 md:mt-0 mb-4">Events</h6>
+
+                  <div class="links">
+                    <a href="#">Soccer for Charity</a>
+                    <a href="#">Bubble Soccer for Charity</a>
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center md:justify-end text-xs leading-relaxed mt-12">
+
+              <div class="social-links flex items-center">
+                <a href="#" class="mr-6"><img src="images/icons/footer-facebook.svg" /></a>
+                <a href="#" class="mr-6"><img src="images/icons/footer-twitter.svg" /></a>
+                <a href="#" class="mr-6"><img src="images/icons/footer-linkedin.svg" /></a>
+              </div>
+
+              <p style="color: #8d8d8d;">Copyright 2020<br/>
+                Youth Empowering Parents</p>
+            </div>
+            
+        </div>
+    </footer>
+  </div>
+
+
+
+  <!-- POPUPS -->
+
+  <div class="popup-overlay">
+
+    <!-- POPUP 1 -->
+    <div class="popup" id="popup-video">
+      <div class="popup-content relative z-10">                        
+          <div class="text-black relative z-20 py-16 px-10 font-gibson">
+            
+            <div class="responsive-video"><iframe class="w-full" src=""></iframe></div>
+            
+        </div>
+      </div>
+    </div>
+    <!-- POPUP 1 END -->
+
+  </div>
+  <!-- POPUP END -->
+
+   
+</body>
+
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ 
+ <!-- Animate On Scroll -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+ <script src="js/main.js"></script> 
+
+</html>
