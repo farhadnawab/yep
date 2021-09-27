@@ -38,6 +38,10 @@
     --brand-fifth: #EFF1FD;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 img{max-width: 100%;}
 
 html{
@@ -457,7 +461,6 @@ section.we-spend-charitable p{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
 /*   grid col  */
 
 .grid-col{
